@@ -114,7 +114,7 @@ language: zh-CN
 default_top_img: 图片路径
 ```
 
-**启动项目**
+**1启动项目**
 
 ```
 # 清除缓存
@@ -139,3 +139,49 @@ extends includes/layout.pug block content include includes/recent-posts.pug incl
 npm install hexo-renderer-pug hexo-renderer-stylus --save
 ```
 
+------
+
+
+
+#### 将博客部署到Git
+
+**新建Git仓库**
+
+在 Git 上新建一个名为 *用户名.github.io* 的仓库，这种方式是最简单的
+
+或者新建一个任意名称的仓库，然后去设置*里面将 Github Pages 的仓库地址改为该仓库，注意，一个 Git 账户只能有一个 Github Pages
+
+
+
+**安装Git插件**
+
+```
+npm install --save hexo-deployer-git
+```
+
+
+
+**配置文件**
+
+在 _config.butterfly.yml 配置文件中添加以下内容
+
+```
+deploy:
+  type: git
+  repo: https://github.com/CK-shadow/CK-shadow.github.io.git
+  branch: master
+```
+
+
+
+**项目部署**
+
+执行以下指定
+
+```
+hexo g -d
+```
+
+部署完成后，就可以通过 https://用户名.github.io/ 在浏览器上打开你的博客了
+
+[Simon的书柜](https://ck-shadow.github.io/)
