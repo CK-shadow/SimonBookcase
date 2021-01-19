@@ -1,7 +1,11 @@
 ---
 title: 使用Hexo的butterfly主题搭建一个博客
 date: 2020-09-01 13:33:26
-tags:
+top_img: https://simon-bookcase.oss-cn-beijing.aliyuncs.com/domenico-loia-hGV2TfOh0ns-unsplash.jpg
+cover: https://simon-bookcase.oss-cn-beijing.aliyuncs.com/domenico-loia-hGV2TfOh0ns-unsplash.jpg
+tags: Butterfly
+categories: 
+  - 博客
 ---
 
 ## 安装Git
@@ -114,7 +118,7 @@ language: zh-CN
 default_top_img: 图片路径
 ```
 
-**1启动项目**
+**启动项目**
 
 ```
 # 清除缓存
@@ -185,3 +189,149 @@ hexo g -d
 部署完成后，就可以通过 https://用户名.github.io/ 在浏览器上打开你的博客了
 
 [Simon的书柜](https://ck-shadow.github.io/)
+
+
+
+## 给博客添加标签和分类
+
+#### Front-matter
+
+
+
+我们可以在文章的 Front-matter 添加这篇文章的信息，可添加的内容有很多，一般主要用到的有
+
+* title：文章标题（必需）
+
+* date：文章创建日期（必需）
+
+* updated：文章更新日期
+
+* tags：标签
+
+* categories：分类
+
+* keywords：关键字
+
+* description：文章描述
+
+* top_img：文章顶部图片
+
+* cover：文章略缩图
+
+  
+
+除此之外，还以很多其它的可选信息，大家可以去官网查看并添加自己想要的内容
+
+------
+
+
+
+#### 添加标签
+
+**给文章添加响应的标签内容**
+
+```
+title: 使用Hexo的butterfly主题搭建一个博客
+date: 2020-09-01 13:33:26
+tags: Butterfly
+```
+
+
+
+**创建tags文件**
+
+在博客根目录下输入以下命令
+
+```
+hexo new page tags
+```
+
+
+
+**修改文件**
+
+接下来就可以在项目中找到 source/tags/index.md 这个文件了，我们需要在其中添加以下内容
+
+```markdown
+---
+title: 标签
+date: 2018-01-05 00:00:00
+type: "tags"
+---
+```
+
+接下来重启项目，就可以看到自己添加的标签了
+
+------
+
+
+
+#### 添加分类
+
+**给文章添加响应的分类内容**
+
+```
+title: 使用Hexo的butterfly主题搭建一个博客
+date: 2020-09-01 13:33:26
+categories: 
+  - 博客
+```
+
+文章可以支持多个分类，最终会是层级展示效果，语法为
+
+```
+categories: 
+	- 分类A
+	- 分类B
+```
+
+
+
+**创建 categories 文件**
+
+在博客根目录下输入以下命令
+
+```
+hexo new page categories
+```
+
+
+
+**修改文件**
+
+接下来就可以在项目中找到 source/categories/index.md 这个文件了，我们需要在其中添加以下内容
+
+```markdown
+---
+title: 分类
+date: 2018-01-05 00:00:00
+type: "categories"
+---
+```
+
+接下来重启项目，就可以看到自己添加的标签了
+
+------
+
+
+
+## 添加顶部导航栏
+
+
+
+在 _config.butterfly.yml 中添加以下配置内容，重启项目，就可以在博客顶部看到添加的导航栏了
+
+```
+menu:
+  首页: / || fas fa-home
+  时间轴: /archives/ || fas fa-archive
+  标签: /tags/ || fas fa-tags
+  分类: /categories/ || fas fa-folder-open
+  清单 ||fa fa-heartbeat:
+    - 音乐 || /music/ || fas fa-music
+    - 照片 || /Gallery/ || fas fa-images
+    - 电影 || /movies/ || fas fa-video
+  友链: /link/ || fas fa-link
+  关于: /about/ || fas fa-heart
+```
+

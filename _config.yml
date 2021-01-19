@@ -78,3 +78,14 @@ deploy:
   branch: master
 
 default_top_img: https://simon-bookcase.oss-cn-beijing.aliyuncs.com/Simple_1366x768_wallpaper_by_PendoX.jpg.pagespeed.ce.QMM6r5k-ZV.jpg
+
+menu:
+  首页: / || fas fa-home
+  时间轴: /archives/ || fas fa-archive
+  标签: /tags/ || fas fa-tags
+  分类: /categories/ || fas fa-folder-open
+  清单 ||fa fa-heartbeat:
+    - 音乐 || /music/ || fas fa-music
+    - 照片 || /Gallery/ || fas fa-images
+    - 电影 || /movies/ || fas fa-video
+  关于: /about/ || fas fa-heart
