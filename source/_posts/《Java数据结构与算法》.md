@@ -1280,3 +1280,22 @@ public class ThreadTree {
 }
 ```
 
+
+
+------
+
+#### 中序遍历
+
+
+
+```java
+/**
+* 中序遍历代码实现
+*/
+public void inOrderTraveral(Node root) {
+    inOrderTraveral(node.leftChild);
+    System.out.println(node.data.toString());
+    inOrderTraveral(node.rightChild);
+}
+```
+
