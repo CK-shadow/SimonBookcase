@@ -884,7 +884,7 @@ public T remove(int i) {
 }
 ```
 
-## 树
+## 二叉树
 
 ### 什么是树
 
@@ -1210,6 +1210,8 @@ public void levelOrder(Node root) {
 
 
 
+## 特殊的二叉树
+
 ### 线索二叉树
 
 #### 定义
@@ -1407,3 +1409,93 @@ public void inOrderTraveral(Node root) {
 
 
 ![image-20210127235520764](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210127235520764.png)
+
+
+
+
+
+------
+
+#### 哈夫曼树的java实现
+
+
+
+**Node 节点**
+
+相比于普通的二叉树节点，哈夫曼树的结点会多一个域来存储该结点的权值
+
+```java
+public class Node {
+	private Object data;
+    private Node leftChild;
+    private Node rightChild;
+    private double weight;
+}
+```
+
+
+
+**构造哈夫曼树**
+
+```java
+public Node createTree(List<Node> nodes) {
+    // 只要nodes数组中还有两个以上结点
+    while (nodes.size() > 1) {
+        // 根据权值大小从大到小排序
+        sort(nodes);
+        // 获取权值最小的两个结点
+        Node left = nodes.get(nodes.size() - 1);
+        Node right = nodes.get(nodes.size() - 2);
+        
+        // 生成新结点，新结点的权值为两个子结点的权值之和
+        Node parent = new Node(null, left.weight, right.weight);
+        
+        // 让新结点作为两个权值最小结点的父结点
+        parent.leftChild = left;
+        parent.rightChild = right;
+        // 删除权值最小的两个结点
+        nodes.remove(nodes.size() - 1);
+        nodes.remove(nodes.size() - 1);
+        // 将新结点加入到集合中
+        nodes.add(parent);
+    }
+    return nodes.get(0);
+}
+
+private void sort(List<Node> nodes) {
+    subSort(nodes, 0, nodes.size() - 1);
+}
+
+/**
+ * 快速排序
+ **/
+private void subSort(List<Node> nodes, int start, int end) {
+    if (start < end) {
+        // 以第一个元素作为分界值
+        Node base = nodes.get(start);
+        // i 从左边搜索，搜索大于分界值的元素的索引
+        int i = start;
+        // j 从右边搜索，搜索小于分界值的元素的索引
+        int j = end;
+        while (true) {
+            // 找到大于分界值的元素的索引，或者 i 已经到了end 处
+            while (i < end && nodes.get(++i).weight >= base.weight) {}
+            // 找到小于分界值的元素的索引，或者 j 已经到了 start 处
+            while (j > start && nodes.get(--j).weight <= base.weight) {}
+            if (i < j) {
+                swap(nodes, i, j);
+            } else {
+                break;
+            }
+        }
+        swap(nodes, start, j);
+        // 递归左边子序列
+        subSort(nodes, start, j - 1);
+        // 递归右边子序列
+        subStart(nodes, i + 1, end)
+    }
+}
+
+
+```
+
