@@ -1499,3 +1499,150 @@ private void subSort(List<Node> nodes, int start, int end) {
 
 ```
 
+
+
+------
+
+### 二叉查找树（二叉搜索树、二叉排序树）
+
+#### 什么是二叉查找树
+
+
+
+在二叉查找树中，根节点的值大于其左子树中任意一个节点的值，小于其右节点中任意一节点的值，这一规则适用于二叉查找树中的每一个节点
+
+
+
+二叉查找树，也叫二叉排序树是满足以下条件的二叉树：
+
+1. 左子树上的所有节点值均小于根节点值
+2. 右子树上的所有节点值均不小于根节点值
+3. 左右子树也满足上述两个条件
+
+
+
+------
+
+#### 二叉查找树结点的插入
+
+
+
+二叉查找树的插入过程如下：
+
+1. 若当前的二叉查找树为空，则插入的元素为根节点
+2. 若插入的元素值小于根节点值，则将元素插入到左子树中
+3. 若插入的元素值不小于根节点值，则将元素插入到右子树中
+
+
+
+```java
+public void insert(Node node) {
+    if (root == null) {
+        // 树为空，则把第一个结点置为根节点
+        root = node;
+    } else {
+        Node parent = root;
+        while (true) {
+            if (node.data < parent.data) {
+                if (parent.leftChild == null) {
+                    parent.leftChild = node;
+                    return;
+                } else {
+                    parent = parent.leftChild;
+                }
+            } else {
+                if (parent.rightChild == null) {
+                    parent.rightChild = node;
+                    return;
+                } else {
+                    parent = parent.rightChild;
+                }
+            }
+        }
+    }
+}
+```
+
+
+
+------
+
+#### 二叉查找树结点的删除
+
+在删除节点的时候我们只需考虑一下三种情况：
+
+1. 要删除的结点是叶子结点，如图：
+
+   ![image-20210310235256739](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210310235256739.png)
+
+   这种情况直接删除叶子结点即可
+
+   
+
+2. 要删除的结点有左结点但是没有右结点，或者有右结点但是没有左结点，如图：
+
+   ![image-20210310235337053](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210310235337053.png)
+
+   这种情况将被删除结点的子结点的值赋给被删除结点，然后删掉被删除结点的子结点
+
+   
+
+3. 删除的节点既有左节点又有右节点，在这种情况下，我们只需要将找到待删节点的右子树中值最小的节点（或者左子树中值最大的结点），将其删除并且获取其值，并用其值替换待删节点的值即可
+
+   ![image-20210310235636379](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210310235636379.png)
+
+
+
+```java
+public void delete (Node node) {
+	if (node.leftChild == null && node.rightChild == null) {
+        // 第一种情况
+        node = null;
+    } else if (node.leftChild != null && node.rightChild != null) {
+        // 第三种情况
+        Node rightLeaf = node.rightChild;
+        while (rightLeaf.leftChild != null) {
+            rightLeaf = rightChild.leftChild;
+        }
+        node.data = rightLeaf.data;
+        if (rightLeaf.rightChild != null) {
+            if (rightLeaf.parent == node) {
+                node.rightChild == rightLeaf.rightChild;
+            } else {
+                rightLeaf.parent.leftChild = rightLeaf.rightChild;
+            }
+        }
+        rightLeaf == null;
+    } else {
+        // 第二种情况
+        if (node.leftChild != null) {
+            node.data = node.leftChild.data;
+            node.leftChild = null;
+        } else {
+            node.data = node.rightChild.data;
+            node.rightChild = null;
+        }
+    }
+}
+```
+
+
+
+------
+
+### 平衡二叉树（AVL树）
+
+#### 什么是平衡二叉树
+
+
+
+二叉搜索树一定程度上可以提高搜索效率，但当出入的结点为有序数列时，二叉树就会退化成链表，如图
+
+![image-20210314230400388](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210314230400388.png)
+
+在数据结构中，将左右子树高度差不超过一的树称为平衡树，而 AVL 树就是始终保持平衡状态的二叉搜索树，也叫平衡二叉树
+
+
+
+AVL树是最早被发明的自平衡二叉查找树。在AVL树中，任一节点对应的两棵子树的最大高度差为1，因此它也被称为高度平衡树
+
