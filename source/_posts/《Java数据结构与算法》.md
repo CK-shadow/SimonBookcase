@@ -1656,3 +1656,23 @@ AVL树是最早被发明的自平衡二叉查找树。在AVL树中，任一节�
 
 1. 可以是空树
 2. 假如不是空树，任何一个结点的左子树与右子树都是平衡二叉树，并且高度之差的绝对值不超过 1
+
+
+
+------
+
+#### 平衡因子
+
+
+
+某节点的左子树与右子树的高度(深度)差即为该节点的平衡因子，平衡二叉树中不存在平衡因子大于 1 的节点。在一棵平衡二叉树中，节点的平衡因子只能取 0 、1 或者 -1 ，分别对应着左右子树等高，左子树比较高，右子树比较高
+
+
+
+
+
+![image-20210325215503400](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210325215503400.png)
+
+![image-20210325215512109](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210325215512109.png)
+
+![image-20210325215522378](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210325215522378.png)
