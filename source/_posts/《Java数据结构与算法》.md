@@ -1676,3 +1676,24 @@ AVL树是最早被发明的自平衡二叉查找树。在AVL树中，任一节�
 ![image-20210325215512109](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210325215512109.png)
 
 ![image-20210325215522378](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210325215522378.png)
+
+------
+
+#### 平衡二叉树的结点构造
+
+
+
+```java
+public class Node {
+    // 深度
+    private int depth;
+    // 夫结点
+    private Node parent;
+    // 左右孩子结点
+    private Node leftChild;
+    private Node rightChild;
+    // 结点数据
+    private Object data;
+}
+```
+
