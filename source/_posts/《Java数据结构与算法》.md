@@ -1820,9 +1820,39 @@ private Node LL_rotate(Node A) {
     B.rightChild = A;
     // 更新AB结点的深度
     A.depth = Math.max(height(A.leftChild), height(A.rightChild)) + 1;
-    B.depth = Math.max(height(A.leftChild), height(A.rightChild)) + 1;
+    B.depth = Math.max(height(B.leftChild), height(A)) + 1;
     
     return B;
+}
+```
+
+
+
+------
+
+#### RR 代码实现
+
+只需要执行一次左旋即可
+
+![img](https://pic1.zhimg.com/v2-e7044e4965ba640ee9ef35beac407cdc_b.webp)
+
+```java
+/**
+* RR型 左旋转
+* 结点如上图对应
+**/
+private Node LL_rotate(Node A) {
+    // 获取结点的右子树
+    Node C = A.rightChild;
+    // 将右子树的左子树变为结点的右子树
+    A.rightChild = C.leftChild;
+    // 将结点变为左孩子子树的右子树
+    C.leftChild = A;
+    // 更新AB结点的深度
+    A.depth = Math.max(height(A.leftChild), height(A.rightChild)) + 1;
+    C.depth = Math.max(height(A), height(C.rightChild)) + 1;
+    
+    return C;
 }
 ```
 
