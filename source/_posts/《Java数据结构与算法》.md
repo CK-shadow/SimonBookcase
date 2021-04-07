@@ -1794,3 +1794,35 @@ public class Node {
 |    LR    | 在 A 的左子树根节点的右子树上插入节点而破坏平衡 | 先左旋后右旋 |
 |    RL    | 在 A 的右子树根节点的左子树上插入节点而破坏平衡 | 先右旋后左旋 |
 
+
+
+------
+
+#### LL 代码实现
+
+只需要执行一次右旋即可
+
+![img](https://pic4.zhimg.com/v2-373766641d1c03a78f3d7eac803d1f57_b.webp)
+
+
+
+```java
+/**
+* LL型 右旋转
+* 结点如上图对应
+**/
+private Node LL_rotate(Node A) {
+    // 获取结点的左子树
+    Node B = A.leftChild;
+    // 将左子树的右子树变为结点的左子树
+    A.leftChild = B.rightChild;
+    // 将结点变为左孩子子树的右子树
+    B.rightChild = A;
+    // 更新AB结点的深度
+    A.depth = Math.max(height(A.leftChild), height(A.rightChild)) + 1;
+    B.depth = Math.max(height(A.leftChild), height(A.rightChild)) + 1;
+    
+    return B;
+}
+```
+
