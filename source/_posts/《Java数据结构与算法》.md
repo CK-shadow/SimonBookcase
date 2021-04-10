@@ -1798,7 +1798,7 @@ public class Node {
 
 ------
 
-#### LL 代码实现
+#### LL(A的左孩子的左子树插入结点) 代码实现
 
 只需要执行一次右旋即可
 
@@ -1830,7 +1830,7 @@ private Node LL_rotate(Node A) {
 
 ------
 
-#### RR 代码实现
+#### RR(A的右孩子的右子树插入结点) 代码实现
 
 只需要执行一次左旋即可
 
@@ -1841,7 +1841,7 @@ private Node LL_rotate(Node A) {
 * RR型 左旋转
 * 结点如上图对应
 **/
-private Node LL_rotate(Node A) {
+private Node RR_rotate(Node A) {
     // 获取结点的右子树
     Node C = A.rightChild;
     // 将右子树的左子树变为结点的右子树
@@ -1853,6 +1853,40 @@ private Node LL_rotate(Node A) {
     C.depth = Math.max(height(A), height(C.rightChild)) + 1;
     
     return C;
+}
+```
+
+
+
+------
+
+#### LR(A的左孩子的右子树插入结点)代码实现
+
+
+
+若 A 的左孩子节点 B 的右子树 E 插入节点 F ，导致节点 A 失衡，如图：
+
+![image-20210410204030943](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210410204030943.png)
+
+旋转流程如下：
+
+![image-20210410204728820](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210410204728820.png)
+
+![image-20210410204740726](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210410204740726.png)
+
+也就是说，经过这两步操作，使得原来根节点的左孩子的右孩子 E 节点成为了新的根节点
+
+
+
+```java
+/**
+* LR型 右旋转之后再左旋
+* 结点如上图对应
+**/
+private Node LR_rotate(Node A) {
+    Node E = RR_rotate(A.leftChild);
+    
+    return LL_rotate(E);
 }
 ```
 
