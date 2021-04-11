@@ -1890,3 +1890,31 @@ private Node LR_rotate(Node A) {
 }
 ```
 
+
+
+------
+
+#### RL(A的右孩子的左子树插入结点)代码实现
+
+
+
+右孩子插入左节点的过程与左孩子插入右节点过程类似，也是需要执行两步操作，使得旋转之后为原来根结点的右孩子的左孩子作为新的根节点
+
+![image-20210411170748939](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210411170748939.png)
+
+![image-20210411170846005](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210411170846005.png)
+
+![image-20210411170856146](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210411170856146.png)
+
+```java
+/**
+* RL型 左旋转之后再右旋
+* 结点如上图对应
+**/
+private Node RL_rotate(Node A) {
+    Node D = LL_rotate(A.leftChild);
+    
+    return RR_rotate(D);
+}
+```
+
