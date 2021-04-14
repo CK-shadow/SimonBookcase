@@ -1979,3 +1979,123 @@ AVL 树和二叉查找树的删除操作情况一致，都分为四种情况：
 
 
 由红黑树的性质可知，红黑树并不追求绝对的平衡而只追求黑色结点的平衡，目的是通过用非严格的平衡来减少增删结点时旋转的次数，而与 AVL 树相比，红黑树调整树的平衡除了旋转之外，还多了“变色”这么一个步骤
+
+
+
+------
+
+#### 红黑树结点的插入
+
+
+
+以下是我们在操作红黑树时的约定叫法：
+
+![image-20210411195729876](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210411195729876.png)
+
+
+
+以下是关于红黑树结点插入时的归纳整理：
+
+![image-20210411233823776](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210411233823776.png)
+
+情景 1、2、3 都是比较好处理的，而情景 4 中，4.2 和 4.3 又是相反的情况，懂得一个就可以推出另一个
+
+
+
+代码实现
+
+```java
+/**
+*  插入结点  node为插入的结点，root最开始为根节点
+**/
+public void insert(Node node, Node root) {
+    // 情景4.1，如果根节点为空，则将插入的结点变成黑色即可
+    if (root == NIL) {
+        node.color = Color.Black;
+        this.root = node;
+        return;
+    }
+    // 记录插入结点的父结点
+    Node parent = root;
+    while (node.value != root.value) {
+        // 更新parent
+        parent = root;
+        if (node.value > root.value) {
+            // 插入右子树
+            root = root.right;
+            // 到达NIL结点，当作右儿子插入
+            if (root == NIL) {
+                node.parent = parent;
+                parent.right = node;
+                break;
+            }
+        } else {
+            // 插入到左子树
+            root = root.left;
+            // 到达NIL结点，当作右儿子插入
+            if (root == NIL) {
+                node.parent = parent;
+                parent.left = node;
+                break;
+            }
+        }
+    }
+    // 结点插入完成，进行树的修复工作
+    insertFixUp(node);
+}
+
+/**
+* Node结点插入之后的修复工作
+**/
+private void insertFixUp(Node node) {
+    // 添加修复操作不会超过两次
+    // node结点经过前一次处理后上升到根节点，颜色为红色，染成黑色，更新根节点指针
+    if (node.parent == null) {
+        node.color = Color.Black;
+        this.root = node;
+        return;
+    }
+    // node结点的父结点为黑色，无需调整
+    if (node.parent.color = Color.Black) {
+        return;
+    }
+    // 得到node结点的父结点、祖父结点和叔叔结点
+    Node parent = node.parent;
+    Node grandParent = node.parent.parent;
+    Node uncle = getUncle(node);
+    if (uncle.color = Color.Red) {
+        // 情景4.1，node 结点的父结点和叔叔结点为红色，祖父结点为黑色
+        // 将父结点和叔叔结点染黑，祖父结点染成红，此时的祖父结点可能与其父结点颜色冲突，递归对其进行修复处理
+        parent.color = Color.Black;
+        uncle.color = Color.Black;
+        garentParent.color = Color.Red;
+        // 递归修复祖父结点
+        insertFixUp(garentParent);
+    } else if (node == parent.leftChild && parent == garentParent.leftChild) {
+        // 情景4.2.1
+        // 将父结点染黑，祖父结点染红，右旋转
+        parent.color = Color.Black;
+        grandParent.color = Color.Red;
+        LL_rotate(grandParent);
+    } else if (node == parent.leftChild && parent == grantParent.rightChild) {
+        // 情景4.2.2
+        // 将父结点染黑，祖父结点染红，右旋转之后再左旋转
+        parent.color = Color.Black;
+        grandParent.color = Color.Red;
+        RL_rotate(grandParent);
+    } else if (node == parent.rightChild && parent == grantParent.rightChild) {
+        // 情景4.3.1
+        // 将父结点染黑，祖父结点染红，左旋转
+        parent.color = Color.Black;
+        grandParent.color = Color.Red;
+        RR_rotate(grandParent);
+    } else  {
+        // 情景4.3.2
+        // 将父结点染黑，祖父结点染红，左旋转之后再右旋转
+        parent.color = Color.Black;
+        grandParent.color = Color.Red;
+        LR_rotate(grandParent);
+    }
+}
+```
+
