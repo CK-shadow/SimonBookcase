@@ -2178,7 +2178,7 @@ private void insertFixUp(Node node) {
 
 
 
-一个 m 阶的 B 树具有如下几个特征：
+一个 m 阶（一个结点存储元素的数量称为阶）的 B 树具有如下几个特征：
 
 1. 根结点至少有两个子女
 2. 每个中间节点都包含 k - 1 个元素和 k 个孩子，其中 m/2 <= k <= m
@@ -2190,3 +2190,14 @@ private void insertFixUp(Node node) {
 
 ------
 
+#### B 树结点的插入
+
+
+
+若结点的关键字个数小于 m - 1，直接在最底层插入
+
+![image-20210617224251305](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210617224251305.png)
+
+若结点的关键字个数等于 m - 1，此种情况m-1+1=m溢出，把出问题的那一分支的中间结点插入到父结点中，如果父结点也溢出，递归解决，显然树高可能因此增加一层
+
+![image-20210617224431851](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210617224431851.png)
