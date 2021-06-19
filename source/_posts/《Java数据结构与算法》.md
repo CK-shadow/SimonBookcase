@@ -2221,3 +2221,33 @@ private void insertFixUp(Node node) {
 
 
 实际上 B 树结点的删除要比这复杂的多，需要跟红黑树一样区分删除结点的类型，但是对于 B 树和 B+ 树，更多的是对它的了解，了解索引的工作原理即可
+
+
+
+------
+
+### B+树
+
+#### B 树和 B+ 树的区别
+
+
+
+B+Tree是在B-Tree基础上的一种优化，使其更适合实现外存储索引结构。B+Tree与B-Tree的结构很像，但是也有几个自己的特性：
+
+1. 所有的非叶子节点只存储关键字信息
+2. 所有具体数据都存在叶子结点中
+3. 所有的叶子结点中包含了全部元素的信息
+4. 所有叶子节点之间都有一个链指针
+
+
+
+B 树：
+
+![image-20210619201702331](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210619201702331.png)
+
+
+
+B+ 树：
+
+![image-20210619201735541](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210619201735541.png)
+
