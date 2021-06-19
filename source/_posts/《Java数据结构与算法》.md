@@ -2201,3 +2201,23 @@ private void insertFixUp(Node node) {
 若结点的关键字个数等于 m - 1，此种情况m-1+1=m溢出，把出问题的那一分支的中间结点插入到父结点中，如果父结点也溢出，递归解决，显然树高可能因此增加一层
 
 ![image-20210617224431851](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210617224431851.png)
+
+
+
+------
+
+#### B 树结点的删除
+
+
+
+如图，删除 B 树中的结点 11，首先通过向下搜索找到该结点
+
+![image-20210619192010420](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210619192010420.png)
+
+删除11后，节点12只有一个孩子，不符合B树规范。因此找出12,13,15三个节点的中位数13，取代节点12，而节点12自身下移成为第一个孩子。（即左旋）
+
+![image-20210619192048164](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210619192048164.png)
+
+
+
+实际上 B 树结点的删除要比这复杂的多，需要跟红黑树一样区分删除结点的类型，但是对于 B 树和 B+ 树，更多的是对它的了解，了解索引的工作原理即可
