@@ -2554,3 +2554,69 @@ V1 -> V2 -> v3 -> V4 -> V5 -> V6 -> V7 -> V8
 
 不断重复上述操作，直至剩余集合为空，此时的 U 即为该图的最小生成树
 
+
+
+------
+
+#### 最小生成树算法之迪杰斯特拉算法
+
+
+
+**算法思路**
+
+设G=(V,E)是一个带权有向图，把图中顶点集合V分成两组，第一组为已求出最短路径的顶点集合（用S表示，初始时S中只有一个源点，以后每求得一条最短路径 , 就将加入到集合S中，直到全部顶点都加入到S中，算法就结束了），第二组为其余未确定最短路径的顶点集合（用U表示），按最短路径长度的递增次序依次把第二组的顶点加入S中。在加入的过程中，总保持从源点v到S中各顶点的最短路径长度不大于从源点v到U中任何顶点的最短路径长度。此外，每个顶点对应一个距离，S中的顶点的距离就是从v到此顶点的最短路径长度，U中的顶点的距离，是从v到此顶点只包括S中的顶点为中间顶点的当前最短路径长度
+
+总结一下，详细的步骤大概例如以下：
+
+1. 初始时，S只包含起点s；U包含除s外的其他顶点，且U中顶点的距离为"起点s到该顶点的距离
+2. 从U中选出"距离最短的顶点k"，并将顶点k加入到S中；同时，从U中移除顶点k
+3. 更新U中各个顶点到起点s的距离。之所以更新U中顶点的距离，是由于上一步中确定了k是求出最短路径的顶点，从而可以利用k来更新其它顶点的距离
+4. 重复步骤(2)和(3)，直到遍历完所有顶点
+
+
+
+![image-20210724165755534](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210724165755534.png)
+
+以上图为例，来对迪杰斯特拉算法进行演示
+
+![image-20210724171055451](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210724171055451.png)
+
+![image-20210724171306770](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210724171306770.png)
+
+![image-20210724171604106](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210724171604106.png)
+
+第一步，以点 1 为起始点，此时点 1 可以到达两个点，分别是点 2 和点 8，路径 1 - 2 长度为 4，路径 1 - 8 长度为 8 ，最短路径为 4，因此将点 1 - 2 连通
+
+![image-20210724171848981](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210724171848981.png)
+
+![image-20210724172132803](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210724172132803.png)
+
+第二步，连通了点 1 和点 2 之后，点 1 就又新增了两条可达路径，分别是 1 - 2 - 8，长度为 7，1 - 2 - 3，长度为 12；再未连通的点中， 1 - 2 - 8 的路径长度是最小的，因此将 1 - 2 - 8 相连
+
+![image-20210724172217538](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210724172217538.png)
+
+![image-20210724172357182](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210724172357182.png)
+
+第三步，连通点 8 后，再次新增了两条路径，分别是 1 - 2 - 8 - 9，长度为 8；1 - 2 - 8 - 7，长度为 13，此时未连通的点中长度最短的为 1 -2 - 8 - 9，因此将 1 - 2 - 8 - 9 相连
+
+![image-20210724172432871](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210724172432871.png)
+
+![image-20210724172442401](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210724172442401.png)
+
+![image-20210724172622655](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210724172622655.png)
+
+![image-20210724172631930](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210724172631930.png)
+
+![image-20210724172647733](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210724172647733.png)
+
+![image-20210724172659724](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210724172659724.png)
+
+![image-20210724172712219](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210724172712219.png)
+
+![image-20210724172719635](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210724172719635.png)
+
+![image-20210724172732265](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210724172732265.png)
+
+![image-20210724172740814](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210724172740814.png)
+
+最后，重复执行上述过程，直至将所有的点连通
