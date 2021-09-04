@@ -3103,3 +3103,63 @@ public static void shellSort(int []arr){
 }
 ```
 
+
+
+------
+
+#### 归并排序
+
+
+
+归并排序是建立在归并操作上的一种有效的排序算法。该算法是采用分治法（Divide and  Conquer）的一个非常典型的应用。将已有序的子序列合并，得到完全有序的序列；即先使每个子序列有序，再使子序列段间有序。若将两个有序表合并成一个有序表，称为2-路归并
+
+
+
+**动图演示**
+
+![img](https://images2017.cnblogs.com/blog/849589/201710/849589-20171015230557043-37375010.gif)
+
+
+
+**代码实现**
+
+```java
+public int[] mergeSort(int[] list, int low, int high) {
+    int mid = (low + high)/2;
+    if （low < high） {
+        mergeSort(list, low, mid);
+        mergeSort(list, mid, high);
+        // 左右归并
+        merge(list, low, mid, high);
+    }
+    return list;
+}
+
+public void merge(int[] list, int low, int mid, int high) {
+    int[] temp = new int[high - low + 1];
+    int i = low;
+    int j = mid + 1;
+    int k = 0;
+    // 把较小的数移入到新数组中
+    while (i <= mid && j <= high) {
+        if (a[i] < a[j]) {
+            temp[k++] = a[i++];
+        } else {
+            temp[k++] = a[j++];
+        }
+    }
+    // 把左边剩余的数移入数组 
+    while(i<=mid){
+        temp[k++] = a[i++];
+    }
+    // 把右边边剩余的数移入数组
+    while(j<=high){
+        temp[k++] = a[j++];
+    }
+    // 把新数组中的数覆盖nums数组
+    for(int x=0;x<temp.length;x++){
+        a[x+low] = temp[x];
+    }
+}
+```
+
