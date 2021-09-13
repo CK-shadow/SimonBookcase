@@ -3233,6 +3233,81 @@ public void quickSort(int[] list, int low, int high) {
     quickSort(list, low, j - 1);
     // 递归调用右半数组
     quickSort(list, j + 1, high);
+}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
+```
+
+
+
+------
+
+#### 堆排序
+
+
+
+堆排序（Heapsort）是指利用堆这种数据结构所设计的一种排序算法。堆积是一个近似完全二叉树的结构，并同时满足堆积的性质：即子结点的键值或索引总是小于（或者大于）它的父节点
+
+
+
+**算法描述**
+
+1. 将初始待排序关键字序列(R1,R2….Rn)构建成大顶堆，此堆为初始的无序区
+2. 将堆顶元素R[1]与最后一个元素R[n]交换，此时得到新的无序区(R1,R2,……Rn-1)和新的有序区(Rn),且满足R[1,2…n-1]<=R[n]
+3. 由于交换后新的堆顶R[1]可能违反堆的性质，因此需要对当前无序区(R1,R2,……Rn-1)调整为新堆，然后再次将R[1]与无序区最后一个元素交换，得到新的无序区(R1,R2….Rn-2)和新的有序区(Rn-1,Rn)。不断重复此过程直到有序区的元素个数为n-1，则整个排序过程完成
+
+
+
+**动图演示**
+
+![img](https://images2017.cnblogs.com/blog/849589/201710/849589-20171015231308699-356134237.gif)
+
+
+
+**代码实现**
+
+```java
+/**
+ * 堆排序利用大根堆（或小根堆）堆顶记录的关键字最大（或最小）这一特征，来从当前无需集合中获取最大（或最小）元素变得简单
+ */
+public int[] heapSort(int[] arrays) {
+    for(int i = 0; i < arrays.length - 1 - i; i++) {
+        // 建大根堆
+        createMaxHeap(arrays, arrays.length - 1 - i);
+        // 将当前无需区的堆顶元素与该区间的最后一个元素交换
+        swap(arrays, arrays.length - 1 - i);
+    }
+    return arrays;
+}
+
+private void createMaxHeap(int[] arrays, int lastIndex) {
+    for (int i = (lastIndex - 1)/2; i >= 0; i--) {
+        // 保存当前正在判断的节点
+        int k = i;
+        // 若当前节点的子节点存在
+        while (2 * k + 1 <= lastIndex) {
+            // biggerIndex 总是记录较大节点的值，先赋值为当前判断节点的左子节点
+            int biggerIndex = 2 + k + 1;
+            if (biggerIndex < lastIndex) {
+                // 若右子节点存在，则此时biggerIndex应该等于lastIndex
+                if (arrays[biggerIndex] < arrays[biggerIndex + 1]) {
+                    // 若右子节点比左子节点值大，则biggerIndex记录的是右子节点的值
+                    biggerIndex++;
+                }
+            }
+            if (arrays[k] < arrays[biggerIndex]) {
+                // 若当前节点值比子节点最大值小，则交换两者的值，交换后将biggerIndex的值赋给k
+                swap(arrays, k, biggerIndex);
+                k = biggerIndex;
+            } else {
+                break;
+            }
+        }
+    }
+}
+
+private void swap(int[] arrays, int i, int j) {
+    int temp = arrays[i];
+    arrays[i] = arrays[j];
+    arrays[j] = temp;
 }
 ```
 
