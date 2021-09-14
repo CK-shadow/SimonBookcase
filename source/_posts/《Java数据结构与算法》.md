@@ -3411,10 +3411,10 @@ public double[] bucketSort(double[] array) {
     double max = array[0];
     double min = array[0];
     for (int i = 1; i < array.length; i++) {
-        if (i > max) {
+        if (array[i] > max) {
             max = i;
         }
-        if (i < min) {
+        if (array[i] < min) {
             min = i
         }
     }
@@ -3455,3 +3455,82 @@ public double[] bucketSort(double[] array) {
 
 
 桶排序最好情况下使用线性时间O(n)，桶排序的时间复杂度，取决与对各个桶之间数据进行排序的时间复杂度，因为其它部分的时间复杂度都为O(n)。很显然，桶划分的越小，各个桶之间的数据越少，排序所用的时间也会越少。但相应的空间消耗就会增大
+
+
+
+------
+
+#### **基数排序**
+
+
+
+基数排序是按照低位先排序，然后收集；再按照高位排序，然后再收集；依次类推，直到最高位。有时候有些属性是有优先级顺序的，先按低优先级排序，再按高优先级排序。最后的次序就是高优先级高的在前，高优先级相同的低优先级高的在前
+
+
+
+**算法描述**
+
+1. 取得数组中的最大数，并取得位数
+2. arr 为原始数组，从最低位开始取每个位组成 radix 数组
+3. 对 radix 进行计数排序（利用计数排序适用于小范围数的特点）
+
+
+
+**动图演示**
+
+![img](https://images2017.cnblogs.com/blog/849589/201710/849589-20171015232453668-1397662527.gif)
+
+
+
+**代码实现**
+
+```java
+
+public int[] radixSort(int[] array) {
+    //找到数组中的最大值 
+    int max = array[0]; 
+    for(int i=0;i<array.length;i++){ 
+        if(array[i]>max){
+            max = array[i]; 
+        } 
+    } 
+    
+    //关键字的个数，我们使用个位、十位、百位...当做关键字，所以关键字的个数就是最大值的位数
+    int keysNum = 0;  
+    while(max>0){ 
+        max /= 10; 
+        keysNum++; 
+    } 
+               
+    List<ArrayList<Integer>> buckets = new ArrayList<ArrayList<Integer>>();
+    //每位可能的数字为0~9，所以设置10个桶 
+    for(int i=0;i<10;i++){ 
+        buckets.add(new ArrayList<Integer>());
+    } 
+        
+    //由最次关键字开始，依次按照关键字进行分配 
+    for(int i=0;i<keysNum;i++){ 
+        //扫描所有数组元素，将元素分配到对应的桶中
+        for(int j=0;j<array.length;j++){  
+            //取出该元素对应第i+1位上的数字，比如258，现在要取出十位上的数字，258%100=58,58/10=5 
+            int key =array[j]%(int)Math.pow(10, i+1)/(int)Math.pow(10, i); 
+            buckets.get(key).add(array[j]); //将该元素放入关键字为key的桶中 
+        } 
+            
+        //分配完之后，将桶中的元素依次复制回数组 
+        int counter = 0; //元素计数器 
+        for(int j=0;j<10;j++){ 
+            ArrayList<Integer> bucket =buckets.get(j); //关键字为j的桶 
+            while(bucket.size()>0){ 
+                array[counter++] = bucket.remove(0); //将桶中的第一个元素复制到数组，并移除 
+            } 
+        } 
+    } 
+}
+```
+
+
+
+基数排序基于分别排序，分别收集，所以是稳定的。但基数排序的性能比桶排序要略差，每一次关键字的桶分配都需要O(n)的时间复杂度，而且分配之后得到新的关键字序列又需要O(n)的时间复杂度。假如待排数据可以分为d个关键字，则基数排序的时间复杂度将是O(d*2n) ，当然d要远远小于n，因此基本上还是线性级别的。
+
+基数排序的空间复杂度为O(n+k)，其中k为桶的数量。一般来说n>>k，因此额外空间需要大概n个左右
