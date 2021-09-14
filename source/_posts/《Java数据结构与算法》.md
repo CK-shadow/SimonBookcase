@@ -3233,7 +3233,7 @@ public void quickSort(int[] list, int low, int high) {
     quickSort(list, low, j - 1);
     // 递归调用右半数组
     quickSort(list, j + 1, high);
-}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
+}
 ```
 
 
@@ -3375,3 +3375,83 @@ public int[] countSort(int[] arrays) {
 
 
 数排序是一个稳定的排序算法。当输入的元素是 n 个 0到 k 之间的整数时，时间复杂度是O(n+k)，空间复杂度也是O(n+k)，其排序速度快于任何比较排序算法。当k不是很大并且序列比较集中时，计数排序是一个很有效的排序算法
+
+
+
+------
+
+#### 桶排序
+
+
+
+桶排序是计数排序的升级版。它利用了函数的映射关系，高效与否的关键就在于这个映射函数的确定。桶排序 (Bucket  sort)的工作的原理：假设输入数据服从均匀分布，将数据分到有限数量的桶里，每个桶再分别排序（有可能再使用别的排序算法或是以递归方式继续使用桶排序进行排序）
+
+
+
+**算法描述**
+
+1. 设置一个定量的数组当作空桶
+2. 遍历输入数据，并且把数据一个一个放到对应的桶里去
+3. 对每个不是空的桶进行排序
+4. 从不是空的桶里把排好序的数据拼接起来
+
+
+
+**图片演示**
+
+![image-20210914224234768](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210914224234768.png)
+
+
+
+**代码实现**
+
+```java
+public double[] bucketSort(double[] array) {
+    // 求取最大值和最小值，并计算出差值
+    double max = array[0];
+    double min = array[0];
+    for (int i = 1; i < array.length; i++) {
+        if (i > max) {
+            max = i;
+        }
+        if (i < min) {
+            min = i
+        }
+    }
+    double diff = max - min;
+    
+    // 初始化桶
+    int bucketNum = array.length;
+    ArrayList<LinkedList<Double>> bucketList = new ArrayList<LinkedList<Double>>(bucketNum);
+    for (int i = 0; i < bucketNum; i++) {
+        buicketList.add(new LinkedList<Double>());
+    }
+    
+    // 遍历原始数组将每个元素放入桶中
+    for (int i = 0; i < bucketNum; i++) {
+        int num = (int)((array[i] - min) * (bucketNum - 1) / diff);
+        bucketList.get(num).add(array[i]);
+    }
+    
+    // 对每个桶进行内部排序
+    for (int i = 0; i < bucketList.size(); i++) {
+        // 使用Collection,sort，其底层基于归并排序或归并排序的优化版本
+        Collections.sort(bucketList.get(i));
+    }
+    
+    // 输出全部元素
+    double[] result = new double[array.length];
+    int index = 0;
+    for (LinkedList<Double> list : bucketList) {
+        for (double element : list) {
+            result[index] = element;
+            index++;
+        }
+    }
+    return result;
+}
+```
+
+
+
+桶排序最好情况下使用线性时间O(n)，桶排序的时间复杂度，取决与对各个桶之间数据进行排序的时间复杂度，因为其它部分的时间复杂度都为O(n)。很显然，桶划分的越小，各个桶之间的数据越少，排序所用的时间也会越少。但相应的空间消耗就会增大
