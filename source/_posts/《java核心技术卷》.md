@@ -42,3 +42,16 @@ double 类型的数值精度是 float 类型的两倍，float 类型的数值有
 
 Double.POSITIVE_INFINITY、Double.NEGATIVE_INFINITY 和 Double.NaN 分别表示正无穷大、负无穷大和不是一个数字，但在实际中很少遇到。值得一提的是，不能用 x == Double.NaN 这个方式来检测一个值是否是一个数字，而应该用 Double.NaN(x) 这种方法
 
+
+
+------
+
+#### char 类型
+
+
+
+char 类型用于表示单个字符，在 java 中，char 类型用 UTF-16 编码描述一个代码单元
+
+
+
+强烈建议不要在代码中使用 char 类型，除非确实需要对 UTF-16 编码进行操作，最好将需要处理的字符串用抽象类型进行表示
