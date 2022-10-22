@@ -3,9 +3,11 @@ title: 《Java数据结构与算法》
 date: 2020-09-22 23:44:50
 tags: 数据结构与算法
 categories: 数据结构与算法
-top_img: https://simon-bookcase.oss-cn-beijing.aliyuncs.com/franki-chamaki-1K6IQsQbizI-unsplash.jpg
-cover: https://simon-bookcase.oss-cn-beijing.aliyuncs.com/franki-chamaki-1K6IQsQbizI-unsplash.jpg
+top_img: https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/franki-chamaki-1K6IQsQbizI-unsplash%20%281%29.jpg
+cover: https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/franki-chamaki-1K6IQsQbizI-unsplash%20%281%29.jpg
 ---
+
+
 
 
 
@@ -135,7 +137,7 @@ for(int i=0; i<n; i++) {
 
 #### 时间复杂度的比较
 
-![image-20201103001513219](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/image-20201103001513219.png)
+![image-20201103001513219](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20201103001513219.png)
 
 
 
@@ -159,7 +161,7 @@ O(1) < O(logn) < O(n) < O(nlogn) < O(n²) < O(n³) < O(2ⁿ) < O(n!)
 
 
 
-![image-20201104232327992](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/image-20201104232327992.png)
+![image-20201104232327992](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20201104232327992.png)
 
 
 
@@ -267,7 +269,7 @@ ArrayList 的初始数组长度为 10
 
 
 
-![image-20201107180130865](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/image-20201107180130865.png)
+![image-20201107180130865](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20201107180130865.png)
 
 * 无参构造方法
 
@@ -346,7 +348,7 @@ add() 方法在调用 grow() 方法时，传入的 minCapacity 的值为 size+1�
 * fail-safe
 
   迭代器在遍历元素时，会将原有集合复制出来一份，然后在复制出来的这个集合上进行操作。这样做避免了抛出异常，但是原有集合上的操作并不能被迭代器检测到
-  
+
   
 
 ------
@@ -365,7 +367,7 @@ add() 方法在调用 grow() 方法时，传入的 minCapacity 的值为 size+1�
 
 
 
-![image-20201110211256134](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/image-20201110211256134.png)
+![image-20201110211256134](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20201110211256134.png)
 
 
 
@@ -590,7 +592,7 @@ public static void main(String[] args) {
 
 
 
-![image-20201115151509347](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/image-20201115151509347.png)
+![image-20201115151509347](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20201115151509347.png)
 
 **此图只是对ADT的简单展示，Java中数据结构中的层次远比这个复杂得多**
 
@@ -618,9 +620,9 @@ public static void main(String[] args) {
 
 
 
-![image-20201115170259354](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/image-20201115170259354.png)
+![image-20201115170259354](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20201115170259354.png)
 
-![image-20201115170423180](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/image-20201115170423180.png)
+![image-20201115170423180](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20201115170423180.png)
 
 
 
@@ -640,7 +642,7 @@ public static void main(String[] args) {
 
 
 
-![image-20201115195545751](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/image-20201115195545751.png)
+![image-20201115195545751](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20201115195545751.png)
 
 
 
@@ -699,10 +701,6 @@ public static void main(String[] args) {
 
 
 对于每一个队列数据结构，我们保留一个数组 theArray 以及位置 front 和 back，他们代表队列的两端。还要记录实际存在与队列中的元素个数 currentSize，下图表示处于某个中间状态的队列
-
-
-
-![image-20201119210337396](C:\Users\A\Desktop\image-20201119210337396.png)
 
 
 
@@ -774,7 +772,7 @@ ArrayQueue 是用数组实现的队列，底层的数据结构也是上文提到
 
 
 
-![image-20201121224210165](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20201121224210165.png)
+![image-20201121224210165](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20201121224210165.png)
 
 
 
@@ -890,7 +888,7 @@ public T remove(int i) {
 
 #### 树的简介
 
-![image-20201124204551109](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20201124204551109.png)
+![image-20201124204551109](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20201124204551109.png)
 
 
 
@@ -909,7 +907,7 @@ public T remove(int i) {
 
 
 
-![image-20201124221707828](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20201124221707828.png)
+![image-20201124221707828](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20201124221707828.png)
 
 * 结点：使用树存储结构存储的每一个数据元素都被称为结点
 * 路径：顺着连接结点的边从一个结点走到另一个节点，所经过的结点顺序排列就称为路径
@@ -940,7 +938,7 @@ public T remove(int i) {
 
 
 
-![image-20201211175500008](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20201211175500008.png)
+![image-20201211175500008](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20201211175500008.png)
 
 
 
@@ -968,16 +966,16 @@ public T remove(int i) {
 
 
 
-![image-20201211180057924](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20201211180057924.png)
+![image-20201211180057924](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20201211180057924.png)
 
 
 
 满二叉树除了满足普通二叉树的性质，还具有以下性质：
 
 1.  满二叉树中第 i 层的节点数为 2^(n-1) 个
-2. 深度为 k 的满二叉树必有 2^(k-1) 个节点 ，叶子数为 2^(k-1)
-3. 满二叉树中不存在度为 1 的节点，每一个分支点中都两棵深度相同的子树，且叶子节点都在最底层
-4. 具有 n 个节点的满二叉树的深度为 log2(n+1)
+2.  深度为 k 的满二叉树必有 2^(k-1) 个节点 ，叶子数为 2^(k-1)
+3.  满二叉树中不存在度为 1 的节点，每一个分支点中都两棵深度相同的子树，且叶子节点都在最底层
+4.  具有 n 个节点的满二叉树的深度为 log2(n+1)
 
 
 
@@ -989,15 +987,15 @@ public T remove(int i) {
 
 如果二叉树中除去最后一层节点为满二叉树，且最后一层的结点依次从左到右分布，则此二叉树被称为完全二叉树
 
-![image-20201212192543825](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20201212192543825.png)
+![image-20201212192543825](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20201211180057924.png)
 
 
 
 对于任意一个完全二叉树来说，如果将含有的结点按照层次从左到右依次标号，对于任意一个结点 i ，完全二叉树还有以下几个结论成立：
 
 1. 当 i>1 时，父亲结点为结点 [i/2] 。（i=1 时，表示的是根结点，无父亲结点）
-2.  如果 2*i>n（总结点的个数） ，则结点 i 肯定没有左孩子（为叶子结点）；否则其左孩子是结点 2*i 
-3.  如果 2*i+1>n ，则结点 i 肯定没有右孩子；否则右孩子是结点 2*i+1 
+2. 如果 2*i>n（总结点的个数） ，则结点 i 肯定没有左孩子（为叶子结点）；否则其左孩子是结点 2*i 
+3. 如果 2*i+1>n ，则结点 i 肯定没有右孩子；否则右孩子是结点 2*i+1 
 
 
 
@@ -1017,7 +1015,7 @@ public T remove(int i) {
 
 
 
-![image-20210103150636489](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210103150636489.png)
+![image-20210103150636489](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20210103150636489.png)
 
 
 
@@ -1031,7 +1029,7 @@ public T remove(int i) {
 
 
 
-![image-20210103151203203](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210103151203203.png)
+![image-20210103151203203](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20210103151203203.png)
 
 
 
@@ -1041,7 +1039,7 @@ public T remove(int i) {
 * 节点存储的数据（data）
 * 指向右孩子节点的指针（rightChild）
 
-![image-20210103151359861](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210103151359861.png)
+![image-20210103151359861](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20210103151359861.png)
 
 我们还可以在该节点中添加一个指针，指向该结点的父节点。这样的链表结构，称为三叉链表
 
@@ -1080,7 +1078,7 @@ public class Node{
 
 #### 前序遍历
 
-![image-20210103183839223](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210103183839223.png)
+![image-20210103183839223](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20210103183839223.png)
 
 二叉树前序遍历的实现思想是：
 
@@ -1178,7 +1176,7 @@ public void postOrderTraveral(Node node) {
 
 
 
-![image-20210110194451416](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210110194451416.png)
+![image-20210110194451416](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20210110194451416.png)
 
 
 
@@ -1230,7 +1228,7 @@ public void levelOrder(Node root) {
 
 
 
-![image-20210117135411299](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210117135411299.png)
+![image-20210117135411299](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20210117135411299.png)
 
 
 
@@ -1327,7 +1325,7 @@ public void inOrderTraveral(Node root) {
 
 **方法二：二叉树表示**
 
-![image-20210124190212712](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210124190212712.png)
+![image-20210124190212712](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20210124190212712.png)
 
 如图所示，我们可以使用二叉树的叶子节点来表示英文字母，00 表示 A，10 表示 B，我们根据传过来的编码去读取二叉树的节点，当一个节点是叶子叶子节点的时候，读取该叶子节点表示的英文字母就可以了
 
@@ -1341,11 +1339,11 @@ public void inOrderTraveral(Node root) {
 
 假设在一个文本中只出现了 ABCDEFGH 8个字母，并且每个字母出现的频数如下
 
-![image-20210124200018018](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210124200018018.png)
+![image-20210124200018018](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20210124200018018.png)
 
 我们在二叉树中，根据各个字母的出现频数排列该字母在二叉树中的位置
 
-![image-20210124204148246](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210124204148246.png)
+![image-20210124204148246](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20210124204148246.png)
 
 可以看到，使用最多的字母 C，它的字节码长度只有 2 位（01），而使用最少的字母 H 则在最后，它的字节码长度有 4 位（1111）
 
@@ -1370,7 +1368,7 @@ public void inOrderTraveral(Node root) {
 * **树的路径长度**
 
   从树根到另一个节点的路径长度之和
-  
+
 * **权值**
 
   权值就是定义的路径上面的值，可以理解为字符对应二进制编码出现的概率，权值越大表明出现的概率越大
@@ -1408,7 +1406,7 @@ public void inOrderTraveral(Node root) {
 
 
 
-![image-20210127235520764](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210127235520764.png)
+![image-20210127235520764](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20210127235520764.png)
 
 
 
@@ -1573,7 +1571,7 @@ public void insert(Node node) {
 
 1. 要删除的结点是叶子结点，如图：
 
-   ![image-20210310235256739](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210310235256739.png)
+   ![image-20210310235256739](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20210310235256739.png)
 
    这种情况直接删除叶子结点即可
 
@@ -1581,7 +1579,7 @@ public void insert(Node node) {
 
 2. 要删除的结点有左结点但是没有右结点，或者有右结点但是没有左结点，如图：
 
-   ![image-20210310235337053](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210310235337053.png)
+   ![image-20210310235337053](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20210310235337053.png)
 
    这种情况将被删除结点的子结点的值赋给被删除结点，然后删掉被删除结点的子结点
 
@@ -1589,7 +1587,7 @@ public void insert(Node node) {
 
 3. 删除的节点既有左节点又有右节点，在这种情况下，我们只需要将找到待删节点的右子树中值最小的节点（或者左子树中值最大的结点），将其删除并且获取其值，并用其值替换待删节点的值即可
 
-   ![image-20210310235636379](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210310235636379.png)
+   ![image-20210310235636379](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20210310235636379.png)
 
 
 
@@ -1638,7 +1636,7 @@ public void delete (Node node) {
 
 二叉搜索树一定程度上可以提高搜索效率，但当出入的结点为有序数列时，二叉树就会退化成链表，如图
 
-![image-20210314230400388](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210314230400388.png)
+![image-20210314230400388](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20210314230400388.png)
 
 在数据结构中，将左右子树高度差不超过一的树称为平衡树，而 AVL 树就是始终保持平衡状态的二叉搜索树，也叫平衡二叉树
 
@@ -1671,7 +1669,7 @@ AVL树是最早被发明的自平衡二叉查找树。在AVL树中，任一节�
 
 
 
-![image-20210325215503400](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210325215503400.png)
+![image-20210325215503400](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20210325215503400.png)
 
 ![image-20210325215512109](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210325215512109.png)
 
@@ -1707,11 +1705,11 @@ public class Node {
 
 这是一棵平衡二叉树
 
-![image-20210405194558019](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210405194558019.png)
+![image-20210405194558019](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20210405194558019.png)
 
 在这棵树中插入结点 99，树的结构变成：
 
-![img](https://pic4.zhimg.com/v2-2ddb0f9b832fff594e294dffc299b373_b.webp)
+![img](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/v2-2ddb0f9b832fff594e294dffc299b373_b.gif)
 
 
 
@@ -1733,9 +1731,9 @@ public class Node {
 
 以下两张图分别为左旋和右旋的动图，便于理解和记忆：
 
-![左旋](https://img-blog.csdn.net/20180829143451434?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI1OTQwOTIx/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+![左旋](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/20180829143451434.gif)
 
-![右旋](https://img-blog.csdn.net/20180829143509110?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI1OTQwOTIx/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+![右旋](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/20180829143509110.gif)
 
 
 
@@ -1753,7 +1751,7 @@ public class Node {
 
 
 
-![img](https://pic4.zhimg.com/80/v2-0a757b848f85f3531b0789fd3d79f0b3_720w.jpg)
+![img](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/v2-0a757b848f85f3531b0789fd3d79f0b3_720w.jpg)
 
 如上图所示，加入新节点 99 后， 节点 66 的左子树高度为 1，右子树高度为 3，此时平衡因子为 -2。为保证树的平衡，此时需要对节点 66 做出旋转，因为右子树高度高于左子树，对节点进行左旋操作，流程如下：
 
@@ -1763,7 +1761,7 @@ public class Node {
 
 动图如下：
 
-![img](https://pic4.zhimg.com/v2-db1cdb0da952a71f9b6d64b2608467eb_b.webp)
+![img](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/v2-0a757b848f85f3531b0789fd3d79f0b3_720w.jpg)
 
 ------
 
@@ -1779,7 +1777,7 @@ public class Node {
 
 动图如下：
 
-![img](https://pic4.zhimg.com/v2-05246384c1c16537ca6176983bdb2627_b.webp)
+![img](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/v2-05246384c1c16537ca6176983bdb2627_b.gif)
 
 ------
 
@@ -1802,7 +1800,7 @@ public class Node {
 
 只需要执行一次右旋即可
 
-![img](https://pic4.zhimg.com/v2-373766641d1c03a78f3d7eac803d1f57_b.webp)
+![img](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/v2-373766641d1c03a78f3d7eac803d1f57_b.gif)
 
 
 
@@ -1834,7 +1832,7 @@ private Node LL_rotate(Node A) {
 
 只需要执行一次左旋即可
 
-![img](https://pic1.zhimg.com/v2-e7044e4965ba640ee9ef35beac407cdc_b.webp)
+![img](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/v2-e7044e4965ba640ee9ef35beac407cdc_b.gif)
 
 ```java
 /**
@@ -1866,11 +1864,11 @@ private Node RR_rotate(Node A) {
 
 若 A 的左孩子节点 B 的右子树 E 插入节点 F ，导致节点 A 失衡，如图：
 
-![image-20210410204030943](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210410204030943.png)
+![image-20210410204030943](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20210410204030943.png)
 
 旋转流程如下：
 
-![image-20210410204728820](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210410204728820.png)
+![image-20210410204728820](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20210410204728820.png)
 
 ![image-20210410204740726](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210410204740726.png)
 
@@ -1900,9 +1898,9 @@ private Node LR_rotate(Node A) {
 
 右孩子插入左节点的过程与左孩子插入右节点过程类似，也是需要执行两步操作，使得旋转之后为原来根结点的右孩子的左孩子作为新的根节点
 
-![image-20210411170748939](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210411170748939.png)
+![image-20210411170748939](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20210411170748939.png)
 
-![image-20210411170846005](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210411170846005.png)
+![image-20210411170846005](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20210411170846005.png)
 
 ![image-20210411170856146](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210411170856146.png)
 
@@ -1964,7 +1962,7 @@ AVL 树和二叉查找树的删除操作情况一致，都分为四种情况：
 
 红黑树也是一种自平衡二叉树，而它的结点会有红和黑两种颜色，如图，就是一棵典型的红黑树
 
-![image-20210411191110563](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210411191110563.png)
+![image-20210411191110563](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20210411191110563.png)
 
 
 
@@ -1990,13 +1988,13 @@ AVL 树和二叉查找树的删除操作情况一致，都分为四种情况：
 
 以下是我们在操作红黑树时的约定叫法：
 
-![image-20210411195729876](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210411195729876.png)
+![image-20210411195729876](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20210411195729876.png)
 
 
 
 以下是关于红黑树结点插入时的归纳整理：
 
-![image-20210411233823776](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210411233823776.png)
+![image-20210411233823776](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20210411233823776.png)
 
 情景 1、2、3 都是比较好处理的，而情景 4 中，4.2 和 4.3 又是相反的情况，懂得一个就可以推出另一个
 
@@ -2119,7 +2117,7 @@ private void insertFixUp(Node node) {
 
 有一个查询二叉树前驱和后继结点最直观的方式，即把二叉树所有结点投射在X轴上，所有结点都是从左到右排好序的，所有目标结点的前后结点就是对应前继和后继结点
 
-![image-20210415201950282](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210415201950282.png)
+![image-20210415201950282](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20210415201950282.png)
 
 
 
@@ -2127,7 +2125,7 @@ private void insertFixUp(Node node) {
 
 如图：
 
-![image-20210415221027607](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210415221027607.png)
+![image-20210415221027607](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20210415221027607.png)
 
 基于此，上面所说的 3 种二叉树的删除情景可以相互转换并且最终都是转换为情景 1
 
@@ -2138,7 +2136,7 @@ private void insertFixUp(Node node) {
 
 
 
-![image-20210615224601746](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210615224601746.png)
+![image-20210615224601746](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20210615224601746.png)
 
 #### 红黑树与AVL树的比较
 
@@ -2196,11 +2194,11 @@ private void insertFixUp(Node node) {
 
 若结点的关键字个数小于 m - 1，直接在最底层插入
 
-![image-20210617224251305](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210617224251305.png)
+![image-20210617224251305](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20210617224251305.png)
 
 若结点的关键字个数等于 m - 1，此种情况m-1+1=m溢出，把出问题的那一分支的中间结点插入到父结点中，如果父结点也溢出，递归解决，显然树高可能因此增加一层
 
-![image-20210617224431851](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210617224431851.png)
+![image-20210617224431851](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20210617224431851.png)
 
 
 
@@ -2212,11 +2210,11 @@ private void insertFixUp(Node node) {
 
 如图，删除 B 树中的结点 11，首先通过向下搜索找到该结点
 
-![image-20210619192010420](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210619192010420.png)
+![image-20210619192010420](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20210619192010420.png)
 
 删除11后，节点12只有一个孩子，不符合B树规范。因此找出12,13,15三个节点的中位数13，取代节点12，而节点12自身下移成为第一个孩子。（即左旋）
 
-![image-20210619192048164](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210619192048164.png)
+![image-20210619192048164](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20210619192048164.png)
 
 
 
@@ -2243,13 +2241,13 @@ B+Tree是在B-Tree基础上的一种优化，使其更适合实现外存储索�
 
 B 树：
 
-![image-20210619201702331](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210619201702331.png)
+![image-20210619201702331](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20210619201702331.png)
 
 
 
 B+ 树：
 
-![image-20210619201735541](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210619201735541.png)
+![image-20210619201735541](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20210619201735541.png)
 
 
 
@@ -2265,7 +2263,7 @@ B+ 树：
 
 数据之间的关系有 3 种，分别是 "一对一"、"一对多" 和 "多对多"，前两种关系的数据可分别用线性表和树结构存储，而 "多对多" 的关系就需要用图来表示了，以下就是图的结构示意图：
 
-![image-20210621001000736](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210621001000736.png)
+![image-20210621001000736](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20210621001000736.png)
 
 
 
@@ -2299,7 +2297,7 @@ B+ 树：
 
 对连通图进行遍历，过程中所经过的边和顶点的组合可以看做是一棵普通树，通常称为生成树
 
-![image-20210626191303608](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210626191303608.png)
+![image-20210626191303608](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20210626191303608.png)
 
 连通图中，由于任意两顶点之间可能含有多条通路，遍历连通图的方式有多种，往往一张连通图可能有多种不同的生成树与之对应
 
@@ -2318,11 +2316,11 @@ B+ 树：
 
 非连通图可分解为多个连通分量，而每个连通分量又各自对应多个生成树（至少是 1 棵），因此与整个非连通图相对应的，是由多棵生成树组成的生成森林
 
-![image-20210626220954153](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210626220954153.png)
+![image-20210626220954153](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20210626220954153.png)
 
 这是一张非连通图，可分解为 3 个连通分量，其中各个连通分量对应的生成树如图 3所示：
 
-![image-20210626221017981](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210626221017981.png)
+![image-20210626221017981](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20210626221017981.png)
 
 多个连通分量对应的多棵生成树就构成了整个非连通图的生成森林
 
@@ -2350,7 +2348,7 @@ B+ 树：
 
 
 
-![image-20210627174519073](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210627174519073.png)
+![image-20210627174519073](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20210627174519073.png)
 
 邻接表存储方式和 HashMap 类似，都是数组加链表的结构。拿顶点 V1 来说，与其相关的邻接点分别为 V2 和 V3，因此存储 V1 的链表中存储的是 V2 和 V3 在数组中的位置下标 1 和 2
 
@@ -2368,11 +2366,11 @@ B+ 树：
 
 设图G有n个顶点，则邻接矩阵是一个 n*n 的方阵，定义为：
 
-![image-20210719223523430](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210719223523430.png)
+![image-20210719223523430](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20210719223523430.png)
 
  看一个实例，下图左就是一个无向图
 
-![image-20210719223544095](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210719223544095.png)
+![image-20210719223544095](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20210719223544095.png)
 
 从上面可以看出，无向图的边数组是一个对称矩阵。所谓对称矩阵就是n阶矩阵的元满足 aij = aji。即从矩阵的左上角到右下角的主对角线为轴，右上角的元和左下角相对应的元全都是相等的
 
@@ -2390,11 +2388,11 @@ B+ 树：
 
 若图G是网图，有n个顶点，则邻接矩阵是一个n*n的方阵，定义为：
 
-![image-20210719223830280](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210719223830280.png)
+![image-20210719223830280](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20210719223830280.png)
 
 这里的 wij 表示 (vi,vj) 上的权值。无穷大表示一个计算机允许的、大于所有边上权值的值，也就是一个不可能的极限值。下面左图就是一个有向网图，右图就是它的邻接矩阵
 
-![image-20210719223957763](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210719223957763.png)
+![image-20210719223957763](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20210719223957763.png)
 
 
 
@@ -2412,7 +2410,7 @@ B+ 树：
 
 其中，建立个各个链表中用于存储顶点的首元节点结构如图 1 所示：
 
-![image-20210719234505866](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210719234505866.png)
+![image-20210719234505866](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20210719234505866.png)
 
 从图可以看出，首元节点中有一个数据域和两个指针域（分别用 firstin 和 firstout 表示）：
 
@@ -2426,9 +2424,9 @@ B+ 树：
 
 注意，存储图的十字链表中，各链表中首元节点与其他节点的结构并不相同，图 1 所示仅是十字链表中首元节点的结构，链表中其他普通节点的结构如图所示：
 
-![image-20210719234705295](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210719234705295.png)
+![image-20210719234705295](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20210719234705295.png)
 
-![image-20210719234715239](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210719234715239.png)
+![image-20210719234715239](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20210719234715239.png)
 
 * tailvex 用于存储以首元节点为弧尾的顶点位于数组中的位置下标
 * headvex 用于存储以首元节点为弧头的顶点位于数组中的位置下标
@@ -2440,7 +2438,7 @@ B+ 树：
 
 比如说，用十字链表存储图 3a) 中的有向图，存储状态如图所示：
 
-![image-20210719235138640](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210719235138640.png)
+![image-20210719235138640](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20210719235138640.png)
 
 拿图 3 中的顶点 V1 来说，通过构建好的十字链表得知，以该顶点为弧头的顶点只有存储在数组中第 3 位置的 V4（因此该顶点的入度为 1），而以该顶点为弧尾的顶点有两个，分别为存储数组第 1 位置的 V2 和第 2 位置的 V3（因此该顶点的出度为 2）
 
@@ -2456,7 +2454,7 @@ B+ 树：
 
 
 
-![image-20210720230148185](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210720230148185.png)
+![image-20210720230148185](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20210720230148185.png)
 
 深度优先搜索的过程类似于树的先序遍历，首先从例子中体会深度优先搜索。例如上图是一个无向图，采用深度优先算法遍历这个图的过程为：
 
@@ -2487,7 +2485,7 @@ V1 -> V2 -> V4 -> V8 -> V5 -> V3 -> V6 -> V7
 
 
 
-![image-20210720230910853](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210720230910853.png)
+![image-20210720230910853](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20210720230910853.png)
 
 广度优先搜索类似于树的层次遍历。从图中的某一顶点出发，遍历每一个顶点时，依次遍历其所有的邻接点，然后再从这些邻接点出发，同样依次访问它们的邻接点。按照此过程，直到图中所有被访问过的顶点的邻接点都被访问到
 
@@ -2538,23 +2536,23 @@ V1 -> V2 -> v3 -> V4 -> V5 -> V6 -> V7 -> V8
 
 以上图为例，来对普利姆算法进行演示
 
-![image-20210722002624890](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210722002624890.png)
+![image-20210722002624890](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20210722002624890.png)
 
 第一步操作，随机选取一个点（此例从顶点A开始）
 
-![image-20210722002805797](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210722002805797.png)
+![image-20210722002805797](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20210722002805797.png)
 
 第二步，剩余集合中，只有B、G与集合 U 中的点相连，且 AB 间的权值最小，因此将 B 移入生成树 U 中
 
-![image-20210722002938787](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210722002938787.png)
+![image-20210722002938787](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20210722002938787.png)
 
 第三步，剩余集合中，有 C、F、G 与集合 U 中的点相连，且 BF 间权值最小，因此再将 F 点移入生成树 U 中
 
-![image-20210722003104564](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210722003104564.png)
+![image-20210722003104564](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20210722003104564.png)
 
-![image-20210722003114914](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210722003114914.png)
+![image-20210722003114914](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20210722003114914.png)
 
-![image-20210722003128962](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210722003128962.png)
+![image-20210722003128962](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20210722003128962.png)
 
 不断重复上述操作，直至剩余集合为空，此时的 U 即为该图的最小生成树
 
@@ -2579,49 +2577,49 @@ V1 -> V2 -> v3 -> V4 -> V5 -> V6 -> V7 -> V8
 
 
 
-![image-20210724165755534](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210724165755534.png)
+![image-20210724165755534](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20210724165755534.png)
 
 以上图为例，来对迪杰斯特拉算法进行演示
 
-![image-20210724171055451](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210724171055451.png)
+![image-20210724171055451](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20210724171055451.png)
 
-![image-20210724171306770](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210724171306770.png)
+![image-20210724171306770](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20210724171306770.png)
 
-![image-20210724171604106](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210724171604106.png)
+![image-20210724171604106](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20210724171604106.png)
 
 第一步，以点 1 为起始点，此时点 1 可以到达两个点，分别是点 2 和点 8，路径 1 - 2 长度为 4，路径 1 - 8 长度为 8 ，最短路径为 4，因此将点 1 - 2 连通
 
-![image-20210724171848981](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210724171848981.png)
+![image-20210724171848981](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20210724171848981.png)
 
-![image-20210724172132803](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210724172132803.png)
+![image-20210724172132803](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20210724172132803.png)
 
 第二步，连通了点 1 和点 2 之后，点 1 就又新增了两条可达路径，分别是 1 - 2 - 8，长度为 7，1 - 2 - 3，长度为 12；再未连通的点中， 1 - 2 - 8 的路径长度是最小的，因此将 1 - 2 - 8 相连
 
-![image-20210724172217538](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210724172217538.png)
+![image-20210724172217538](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20210724172217538.png)
 
-![image-20210724172357182](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210724172357182.png)
+![image-20210724172357182](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20210724172357182.png)
 
 第三步，连通点 8 后，再次新增了两条路径，分别是 1 - 2 - 8 - 9，长度为 8；1 - 2 - 8 - 7，长度为 13，此时未连通的点中长度最短的为 1 -2 - 8 - 9，因此将 1 - 2 - 8 - 9 相连
 
-![image-20210724172432871](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210724172432871.png)
+![image-20210724172432871](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20210724172432871.png)
 
-![image-20210724172442401](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210724172442401.png)
+![image-20210724172442401](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20210724172442401.png)
 
-![image-20210724172622655](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210724172622655.png)
+![image-20210724172622655](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20210724172622655.png)
 
-![image-20210724172631930](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210724172631930.png)
+![image-20210724172631930](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20210724172631930.png)
 
-![image-20210724172647733](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210724172647733.png)
+![image-20210724172647733](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20210724172647733.png)
 
-![image-20210724172659724](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210724172659724.png)
+![image-20210724172659724](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20210724172659724.png)
 
-![image-20210724172712219](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210724172712219.png)
+![image-20210724172712219](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20210724172712219.png)
 
-![image-20210724172719635](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210724172719635.png)
+![image-20210724172719635](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20210724172719635.png)
 
-![image-20210724172732265](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210724172732265.png)
+![image-20210724172732265](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20210724172732265.png)
 
-![image-20210724172740814](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210724172740814.png)
+![image-20210724172740814](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20210724172740814.png)
 
 最后，重复执行上述过程，直至将所有的点连通
 
@@ -2645,21 +2643,21 @@ Prim算法是找点，Kruscal算法则是从边出发
 
 以下是步骤示意图
 
-![image-20210725010226435](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210725010226435.png)
+![image-20210725010226435](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20210725010226435.png)
 
 第一步，在该图中，权值最小的边是 EF，因此连接 EF
 
-![image-20210725010343373](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210725010343373.png)
+![image-20210725010343373](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20210725010343373.png)
 
-![image-20210725010355117](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210725010355117.png)
+![image-20210725010355117](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20210725010355117.png)
 
 第三步之后，权值最小的边是 CE，但是连接 CE 之后，CDE 之间就形成了一个闭环，因此跳过 CE 和 CF，连接 BF
 
-![image-20210725010404816](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210725010404816.png)
+![image-20210725010404816](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20210725010404816.png)
 
-![image-20210725010557387](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210725010557387.png)
+![image-20210725010557387](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20210725010557387.png)
 
-![image-20210725010606982](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210725010606982.png)
+![image-20210725010606982](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20210725010606982.png)
 
 此时一共有 6 条边，正好等于 点的数量 - 1
 
@@ -2673,15 +2671,15 @@ Prim算法是找点，Kruscal算法则是从边出发
 
 以下图为例：
 
-![image-20210725011449311](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210725011449311.png)
+![image-20210725011449311](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20210725011449311.png)
 
 在上图中，存在这两个点的集合，分别是[1, 4] 和 [0, 2, 3, 5]，接下来权值最小的边是 5，假设连通点 0 - 3，点 0、3 均在同一个集合中，因此认为它形成了闭环
 
-![image-20210725012225169](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210725012225169.png)
+![image-20210725012225169](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20210725012225169.png)
 
 点 2 - 3 也是如此，因此我们连通 1 - 2，点 1、2 分别在两个集合中，说明未形成闭环，所以连接点 1 - 2，而这两个点分别在两个集合中，所以将原有的点的集合合并成一个，集合为 [0, 1, 2, 3, 4, 5]，即为最终的结果
 
-![image-20210725012446892](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210725012446892.png)
+![image-20210725012446892](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20210725012446892.png)
 
 
 
@@ -2815,7 +2813,7 @@ mid = low + (key-a[low]) / (a[high] - a[low]) * (high-low)
 
 对于斐波那契数列：1、1、2、3、5、8、13、21、34、55、89……（也可以从0开始），前后两个数字的比值随着数列的增加，越来越接近黄金比值0.618。比如这里的89，把它想象成整个有序表的元素个数，而89是由前面的两个斐波那契数34和55相加之后的和，也就是说把元素个数为89的有序表分成由前55个数据元素组成的前半段和由后34个数据元素组成的后半段，那么前半段元素个数和整个有序表长度的比值就接近黄金比值0.618，假如要查找的元素在前半段，那么继续按照斐波那契数列来看，55 = 34 + 21，所以继续把前半段分成前34个数据元素的前半段和后21个元素的后半段，继续查找，如此反复，直到查找成功或失败，这样就把斐波那契数列应用到查找算法中了
 
-![image-20210726172312383](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210726172312383.png)
+![image-20210726172312383](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20210726172312383.png)
 
 从图中可以看出，当有序表的元素个数不是斐波那契数列中的某个数字时，需要把有序表的元素个数长度补齐，让它成为斐波那契数列中的一个数值，当然把原有序表截断肯定是不可能的，不然还怎么查找。然后图中标识每次取斐波那契数列中的某个值时(F[k])，都会进行-1操作，这是因为有序表数组位序从0开始的，纯粹是为了迎合位序从0开始
 
@@ -2881,7 +2879,7 @@ mid = low + (key-a[low]) / (a[high] - a[low]) * (high-low)
 
 
 
-![image-20210731184908024](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210731184908024.png)
+![image-20210731184908024](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20210731184908024.png)
 
 ------
 
@@ -2889,7 +2887,7 @@ mid = low + (key-a[low]) / (a[high] - a[low]) * (high-low)
 
 
 
-![image-20210731184956353](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210731184956353.png)
+![image-20210731184956353](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20210731184956353.png)
 
 
 
@@ -3399,7 +3397,7 @@ public int[] countSort(int[] arrays) {
 
 **图片演示**
 
-![image-20210914224234768](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20210914224234768.png)
+![image-20210914224234768](https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/image-20210914224234768.png)
 
 
 
@@ -3485,7 +3483,6 @@ public double[] bucketSort(double[] array) {
 **代码实现**
 
 ```java
-
 public int[] radixSort(int[] array) {
     //找到数组中的最大值 
     int max = array[0]; 
