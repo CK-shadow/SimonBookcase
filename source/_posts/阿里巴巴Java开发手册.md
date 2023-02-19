@@ -1,9 +1,9 @@
 ---
 title: 阿里巴巴 Java 开发手册
 date: 2022-11-28 23:41:02
-tags: Java
+tags: JAVA
 categories: 
-  - Java
+  - JAVA
 top_img: https://simon-bookcase.oss-cn-beijing.aliyuncs.com/JAVA/%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4%20Java%20%E5%BC%80%E5%8F%91%E6%89%8B%E5%86%8C/pexels-kushal-kumar-13079565.jpg
 cover: https://simon-bookcase.oss-cn-beijing.aliyuncs.com/JAVA/%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4%20Java%20%E5%BC%80%E5%8F%91%E6%89%8B%E5%86%8C/pexels-kushal-kumar-13079565.jpg
 ---
