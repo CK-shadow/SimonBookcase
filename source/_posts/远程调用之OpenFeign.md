@@ -21,7 +21,7 @@ cover: https://simon-bookcase.oss-cn-beijing.aliyuncs.com/JAVA/%E8%BF%9C%E7%A8%8
 
 OpenFeign 是 Spring Cloud 的二级子项目，不同于 Feign，Feign 是 Netflix 公司下的，而 OpenFeign 是 Spring Cloud 下的
 
-OpenFeign 是一种声明式、模板化的 HTTP 客户端。声明式调用是指像调用本地方法一样调用远程方法，无需感知操作远程 HTTP 请求
+OpenFeign 是一种声明式、模板化的 HTTP 客户端。声明式调用是指像调用本地方法一样调用远程方法，无需感知操作远程 HTTP 请求，
 
 
 
