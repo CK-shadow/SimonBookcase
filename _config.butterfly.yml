@@ -77,8 +77,7 @@ deploy:
   repo: https://github.com/CK-shadow/CK-shadow.github.io.git
   branch: master
 
-default_top_img: https://simon-bookcase.oss-cn-beijing.aliyuncs.com/Simple_1366x768_wallpaper_by_PendoX.jpg.pagespeed.ce.QMM6r5k-ZV.jpg
-
+default_top_img: https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E8%83%8C%E6%99%AF%E5%9B%BE/F100037061.jpg
 menu:
   首页: / || fas fa-home
   时间轴: /archives/ || fas fa-archive
