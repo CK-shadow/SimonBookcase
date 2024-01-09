@@ -1,6 +1,15 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Simon的书柜</title><meta name="description"><meta name="author" content="Simon"><meta name="copyright" content="Simon"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://yoursite.com/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta property="og:type" content="website"><meta property="og:title" content="Simon的书柜"><meta property="og:url" content="http://yoursite.com/"><meta property="og:site_name" content="Simon的书柜"><meta property="og:description"><meta property="og:image" content="http://yoursite.com/null"><meta property="article:published_time" content="2021-01-18T14:58:31.554Z"><meta property="article:modified_time" content="2021-01-18T14:58:31.554Z"><meta name="twitter:card" content="summary"><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><script>var GLOBAL_CONFIG = { 
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Simon 的书柜</title><meta name="author" content="Simon"><meta name="copyright" content="Simon"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="攀登亦是风景">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Simon 的书柜">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="Simon 的书柜">
+<meta property="og:description" content="攀登亦是风景">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E8%83%8C%E6%99%AF%E5%9B%BE/v2-bd12bc8dfb61abe313ad48b907c5da94_720w.webp">
+<meta property="article:author" content="Simon">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E8%83%8C%E6%99%AF%E5%9B%BE/v2-bd12bc8dfb61abe313ad48b907c5da94_720w.webp"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://yoursite.com/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
   root: '/',
-  hexoversion: '5.1.1',
   algolia: undefined,
   localSearch: undefined,
   translate: undefined,
@@ -11,176 +20,219 @@
     error: '复制错误',
     noSupport: '浏览器不支持'
   },
-  bookmark: {
-    message_prev: '按',
-    message_next: '键将本页加入书签'
+  relativeDate: {
+    homepage: false,
+    post: false
   },
   runtime: '',
-  date_suffix: {"one_hour":"刚刚","hours":"小时前","day":"天前"},
-  copyright: undefined,
-  ClickShowText: undefined,
-  medium_zoom: false,
-  fancybox: true,
-  Snackbar: undefined,
-  justifiedGallery: {
-    js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
-    css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
   },
-  baiduPush: false,
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
   isPhotoFigcaption: false,
   islazyload: false,
   isanchor: false
-};
-
-var saveToLocal = {
-  set: function setWithExpiry(key, value, ttl) {
-      const now = new Date()
-      const expiryDay = ttl * 86400000
-      const item = {
-        value: value,
-        expiry: now.getTime() + expiryDay,
-      }
-      localStorage.setItem(key, JSON.stringify(item))
-    },
-  
-  get: function getWithExpiry(key) {
-    const itemStr = localStorage.getItem(key)
-
-    if (!itemStr) {
-      return undefined
-    }
-    const item = JSON.parse(itemStr)
-    const now = new Date()
-
-    if (now.getTime() > item.expiry) {
-      localStorage.removeItem(key)
-      return undefined
-    }
-    return item.value
-  }
-}</script><script id="config_change">var GLOBAL_CONFIG_SITE = { 
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = { 
   isPost: false,
   isHome: true,
   isHighlightShrink: false,
-  isSidebar: false,
-  postUpdate: '2021-01-18 22:58:31'
+  isToc: false,
+  postUpdate: '2024-01-09 15:21:33'
 }</script><noscript><style type="text/css">
-#nav {
-  opacity: 1
-}
-.justified-gallery img {
-  opacity: 1
-}
-</style></noscript><script>var activateDarkMode = function () {
-  document.documentElement.setAttribute('data-theme', 'dark')
-  if (document.querySelector('meta[name="theme-color"]') !== null) {
-    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+  #nav {
+    opacity: 1
   }
-}
-var activateLightMode = function () {
-  document.documentElement.setAttribute('data-theme', 'light')
-  if (document.querySelector('meta[name="theme-color"]') !== null) {
-    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+  .justified-gallery img {
+    opacity: 1
   }
-}
 
-var autoChangeMode = 'false'
-var t = saveToLocal.get('theme')
-if (autoChangeMode === '1') {
-  var isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
-  var isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
-  var isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
-  var hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
 
-  if (t === undefined) {
-    if (isLightMode) activateLightMode()
-    else if (isDarkMode) activateDarkMode()
-    else if (isNotSpecified || hasNoSupport) {
-      var now = new Date()
-      var hour = now.getHours()
-      var isNight = hour <= 6 || hour >= 18
-      isNight ? activateDarkMode() : activateLightMode()
-    }
-    window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
-      if (saveToLocal.get('theme') === undefined) {
-        e.matches ? activateDarkMode() : activateLightMode()
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
       }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
     })
-  } else if (t === 'light') activateLightMode()
-  else activateDarkMode()
-} else if (autoChangeMode === '2') {
-  now = new Date()
-  hour = now.getHours()
-  isNight = hour <= 6 || hour >= 18
-  if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
-  else if (t === 'light') activateLightMode()
-  else activateDarkMode()
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    })(window)</script><meta name="generator" content="Hexo 5.1.1"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" src="https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E8%83%8C%E6%99%AF%E5%9B%BE/v2-bd12bc8dfb61abe313ad48b907c5da94_720w.webp" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">33</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">12</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">10</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url('https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E8%83%8C%E6%99%AF%E5%9B%BE/cat.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Simon 的书柜</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">Simon 的书柜</h1><div id="site-subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="https://github.com/CK-shadow" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:ck1996shadow@163.com" target="_blank" title="Email"><i class="fas fa-envelope-open-text"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2024/01/09/%E5%89%8D%E7%AB%AF/Less%20%E9%A2%84%E5%A4%84%E7%90%86%E8%AF%AD%E8%A8%80/" title="Less 预处理语言">     <img class="post_bg" src="https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E5%89%8D%E7%AB%AF/Less%20%E6%95%99%E7%A8%8B/preview.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Less 预处理语言"></a></div><div class="recent-post-info"><a class="article-title" href="/2024/01/09/%E5%89%8D%E7%AB%AF/Less%20%E9%A2%84%E5%A4%84%E7%90%86%E8%AF%AD%E8%A8%80/" title="Less 预处理语言">Less 预处理语言</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2024-01-09T06:37:03.000Z" title="发表于 2024-01-09 14:37:03">2024-01-09</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a></span></div><div class="content">Less 预处理语言Less 的安装与使用CSS 的短板作为前端学习者的我们都要学些 CSS，它作为前端开发的三大基石之一，时刻引领着 Web 的发展潮向。而 CSS 作为一门标记性语言，可能给初学者第一印象就是简单易懂，毫无逻辑，不像编程该有的样子。在语法更新时，每当新属性提出，浏览器的兼容又会马上变成绊脚石，可以说 CSS 短板不容忽视
+问题的诞生往往伴随着技术的兴起，在 Web 发展的这几年，为了让 CSS 富有逻辑性，短板不那么严重，涌现出了 一些神奇的预处理语言。它们让 CSS 彻底变成一门可以使用变量、循环、继承、自定义方法等多种特性的标记语言，逻辑性得以大大增强
+
+预处理语言的诞生其中常用的有三门语言：Sass、Less 、Stylus
+
+Sass 诞生于 2007 年，Ruby 编写，其语法功能都十分全面，可以说它完全把 CSS 变成了一门编程语言。另外在国内外都很受欢迎，并且它的项目团队很是强大 ，是一款十分优秀的预处理语言
+Stylus 诞生于 2010 年，来自 Node.js 社区，语法功能也和 Sass 不相伯仲，是一门十分独特的创新型语言
+Less 诞生于  ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2023/12/16/%E4%BA%91%E5%8E%9F%E7%94%9F/Docker%20%E5%AE%9E%E6%88%98/" title="Docker 实战">     <img class="post_bg" src="https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E4%BA%91%E5%8E%9F%E7%94%9F/Docker%20%E5%AE%9E%E6%88%98/preview.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Docker 实战"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/12/16/%E4%BA%91%E5%8E%9F%E7%94%9F/Docker%20%E5%AE%9E%E6%88%98/" title="Docker 实战">Docker 实战</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-12-16T10:47:40.000Z" title="发表于 2023-12-16 18:47:40">2023-12-16</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E4%BA%91%E5%8E%9F%E7%94%9F/">云原生</a></span></div><div class="content">Docker 实战简介为什么会有 Docker之前在服务器配置一个应用的运行环境，要安装各种软件，Java/RabbitMQ/MySQL/JDBC 驱动包等。安装和配置这些东西有多麻烦就不说了，它还不能跨平台。假如我们是在 Windows 上安装的这些环境，到了 Linux 又得重新装。况且就算不跨操作系统，换另一台同样操作系统的服务器，要移植应用也是非常麻烦的
+传统上认为，软件编码开发/测试结束后，所产出的成果即是程序或是能够编译执行的二进制字节码等( java 为例)。而为了让这些程序可以顺利执行，开发团队也得准备完整的部署文件，让运维团队得以部署应用程式，开发需要清楚的告诉运维部署团队，用的全部配置文件 + 所有软件环境。不过，即便如此，仍然常常发生部署失败的状况。Docker 的出现使得 Docker 得以打破过去「程序即应用」的观念。透过镜像(images)将作业系统核心除外，运作应用程式所需要的系统环境，由下而上打包，达到应用程式跨平台间的无缝接轨运作
+Docker 是基于 Go 语言实现的云开源项目。Docker 的主要目标是 “Build，Ship and Run An ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2023/11/26/%E5%A6%82%E4%BD%95%E8%87%AA%E5%AE%9A%E4%B9%89%E4%B8%80%E4%B8%AA%20Spring%20Starter/" title="如何自定义一个 Spring Boot Starter">     <img class="post_bg" src="https://simon-bookcase.oss-cn-beijing.aliyuncs.com/JAVA/%E5%A6%82%E4%BD%95%E8%87%AA%E5%AE%9A%E4%B9%89%E4%B8%80%E4%B8%AA%20Spring%20Starter/preview.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="如何自定义一个 Spring Boot Starter"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/11/26/%E5%A6%82%E4%BD%95%E8%87%AA%E5%AE%9A%E4%B9%89%E4%B8%80%E4%B8%AA%20Spring%20Starter/" title="如何自定义一个 Spring Boot Starter">如何自定义一个 Spring Boot Starter</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-11-26T09:50:50.000Z" title="发表于 2023-11-26 17:50:50">2023-11-26</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/JAVA/">JAVA</a></span></div><div class="content">如何自定义一个 Spring Boot Starter机制starter 是 SpringBoot 中一种非常重要的机制，它可以繁杂的配置统一集成到 starter 中，我们只需要通过 maven 将 starter 依赖引入到项目中，SpringBoot 就能自动扫描并加载相应的默认配置。starter 的出现让开发人员从繁琐的框架配置中解放出来，将更多的精力专注于业务逻辑的开发，极大的提高了开发效率
+
+为什么要自定义 Starter如今我们的服务几乎都是基于 Spring Boot 构建而来，我们可以将一些可独立于业务代码之外的功能和配置模块封装成一个个 starter，SpringBoot 会为我们完成自动装配，这样复用的时候只需要将其在 pom 中引用依赖即可
+
+命名规则为了区分官方提供的和第三方提供的，官方建议：
+SpringBoot 官方提供的 starter 以 spring-boot-starter-xxx 的形式命名，例如：
+
+spring-boot-starter-aop
+spring-boot-starter-data-jdbc
+
+第三方自定义的 starter  ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2023/10/28/ElasticSearch%20%E5%AE%9E%E6%88%98/" title="ElasticSearch 实战">     <img class="post_bg" src="https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E5%BA%93/ElasticSearch%20%E5%AE%9E%E6%88%98/preview.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="ElasticSearch 实战"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/10/28/ElasticSearch%20%E5%AE%9E%E6%88%98/" title="ElasticSearch 实战">ElasticSearch 实战</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-10-28T03:37:30.000Z" title="发表于 2023-10-28 11:37:30">2023-10-28</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/">数据库</a></span></div><div class="content">ElasticSearch 实战概述简介The Elastic Stack, 包括 Elasticsearch、 Kibana、 Beats 和 Logstash（也称为 ELK Stack）。能够安全可靠地获取任何来源、任何格式的数据，然后实时地对数据进行搜索、分析和可视化
+Elaticsearch，简称为 ES， ES 是一个开源的高扩展的分布式全文搜索引擎， 是整个 ElasticStack 技术栈的核心
+它可以近乎实时的存储、检索数据；本身扩展性很好，可以扩展到上百台服务器，处理 PB 级别的数据
+
+安装官方网站：https://www.elastic.co/cn/
+官方文档：https://www.elastic.co/guide/index.html
+安装教程：https://blog.csdn.net/qq_46533159/article/details/127916528
+
+Restful 和 JSONREST 指的是一组架构约束条件和原则。满足这些约束条件和原则的应用程序或设计就是 RESTful。 Web 应用程序最重要的 REST 原则是，客户端和服务器之间的交 ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2023/10/22/SkyWalking%20%E6%95%99%E7%A8%8B/" title="SkyWalking 教程">     <img class="post_bg" src="https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E4%B8%AD%E9%97%B4%E4%BB%B6/SkyWalking%20%E6%95%99%E7%A8%8B/preview.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="SkyWalking 教程"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/10/22/SkyWalking%20%E6%95%99%E7%A8%8B/" title="SkyWalking 教程">SkyWalking 教程</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-10-22T08:59:53.000Z" title="发表于 2023-10-22 16:59:53">2023-10-22</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E4%B8%AD%E9%97%B4%E4%BB%B6/">中间件</a></span></div><div class="content">SkyWalking 教程APM 系统简介APM（Application Performance Management）即应用性能管理系统，即对企业系统即时监控以实现对应用程序性能管理和故障管理的系统化的解决方案。应用性能管理，主要指对企业的关键业务进行检、优化，提供企业应用的可靠性和质量，保证用户得到良好的服务，降低 IT 总拥有成本
+APM 系统是可以帮助理解系统行为、用于分析性能问题的工具，以便发生故障的时候，能够快速定位和解决问题
+
+分布式链路追踪随着分布式系统和微服务架构的出现，一次用户的请求会经过多个系统，不同系统之间的调用关系十分复杂，任何一个系统出错都有可能整个请求的处理结果。以往的监控系统往往只能知道单个系统的健康状况、一次请求的成功失败，无法快速定位失败的根本原因
+除此之外，复杂的分布式系统也面临着以下问题：
+
+性能分析：一个服务依赖多个服务，被依赖的服务也依赖了其它服务了。如果某个接口耗时突然变长，那未必是直接调用的下游服务慢了，也可能是下游的下游造成的，如果快速定位耗时变长的根本原因呢
+链路梳理：需求迭代很快，系统之间调用关系变化频繁，靠人工很难梳理清楚系统链路 ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2023/09/01/Java%2011%20%E6%96%B0%E7%89%B9%E6%80%A7/" title="Java 11 新特性">     <img class="post_bg" src="https://simon-bookcase.oss-cn-beijing.aliyuncs.com/JAVA/Java%2011%20%E6%96%B0%E7%89%B9%E6%80%A7/preview.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Java 11 新特性"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/09/01/Java%2011%20%E6%96%B0%E7%89%B9%E6%80%A7/" title="Java 11 新特性">Java 11 新特性</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-09-01T11:34:33.000Z" title="发表于 2023-09-01 19:34:33">2023-09-01</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/JAVA/">JAVA</a></span></div><div class="content">Java 11 新特性简介北京时间 2018 年 9 月 26 日，Oracle 官方宣布 Java 11 正式发布。这是 Java 大版本周期变化后的第一个长期支持版本，非常值得关注。从官网下载即可，最新的 Java 11 将带来 ZGC、Http Client 等重要特性，一共包含 17 个 JEP。其实，更新不止 17 个，只是我们更关注以下 17 个更新
+
+JDK 11 将是一个企业不可忽视的版本。从时间节点上看，JDK 11 的发布正好处在 JDK 8 免费更新到期的前夕，同时 JDK 9 和 JDK 10 也陆续成为“历史版本”
+对于企业来说，选择 JDK 11 将意味着长期的、可靠的、可预测的技术路线图。其中免费的 OpenJDK 11 确定将得到 OpenJDK 社区的长期支持，LTS 版本将是可以放心选择的版本
+从 JVM GC 的角度，JDK 11 引入了两种 GC，其中包括也许是划时代意义的 ZGC，虽然其目前还是实验特性，但从能力上看，这是 JDK 的一个巨大突破，为特定生产环境的苛刻需求提供了一个可能的选择。例如，对部分企业核心存储的产品，如果能保证不超过 1 ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2023/08/29/Java%2010%20%E6%96%B0%E7%89%B9%E6%80%A7/" title="Java 10 新特性">     <img class="post_bg" src="https://simon-bookcase.oss-cn-beijing.aliyuncs.com/JAVA/Java%2010%20%E6%96%B0%E7%89%B9%E6%80%A7/preview.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Java 10 新特性"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/08/29/Java%2010%20%E6%96%B0%E7%89%B9%E6%80%A7/" title="Java 10 新特性">Java 10 新特性</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-08-29T12:51:01.000Z" title="发表于 2023-08-29 20:51:01">2023-08-29</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/JAVA/">JAVA</a></span></div><div class="content">Java 10 新特性简介2018 年 3 月 21 日，Oracle 官方宣布 Java 10 正式发布
+需要注意的是 Java 9 和 Java 10 都不是 LTS 版本，和过去的 Java 大版本升级不同，这两个只有半年左右的开发期和维护期。而未来的 Java 11，也就是 18.9 LTS，才是 Java 8 之后第一个 LTS 版本
+JDK 10 一共定义了 109 个新特性，其中包含 12 个 JEP（对于程序员来讲，真正的新特性其实就 1 个），还有一些新的 API 和 JVM 规范以及 Java 语言规范上的改动
+JDK 10 的 12 个 JEP，可参阅官方文档：https://openjdk.org/projects/jdk/10/
+
+局部变量类型推断开发者经常抱怨 Java 中引用代码的程度。局部变量的显示类型声明，常常被认为是非必须的，给一个好听的名字经常可以很清楚的表达应该怎样继续
+作为 Java 开发者，在声明一个变量时，我们总是习惯了敲打两次变量类型，第一次用于声明变量类型，第二次用于构造器
+1LinkedHashSet&lt;Integer&gt; s ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2023/08/20/Java%209%20%E6%96%B0%E7%89%B9%E6%80%A7/" title="Java 9 新特性">     <img class="post_bg" src="https://simon-bookcase.oss-cn-beijing.aliyuncs.com/JAVA/Java%209%20%E6%96%B0%E7%89%B9%E6%80%A7/preview.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Java 9 新特性"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/08/20/Java%209%20%E6%96%B0%E7%89%B9%E6%80%A7/" title="Java 9 新特性">Java 9 新特性</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-08-20T15:12:46.000Z" title="发表于 2023-08-20 23:12:46">2023-08-20</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/JAVA/">JAVA</a></span></div><div class="content">Java 9 新特性简介经过 4 次跳票，历经曲折的 Java 9 终于在 2017 年 9 月 21 日发布
+从  Java 9 开始，Java 的计划发布周期是 6 个月，下一个 Java 的主版本将于 2018 年 3 月发布，命名为 Java 18.3，紧接着再过 6 个月将发布 Java 18.9。这意味着 Java 的更新从传统的以特性驱动的发布周期，转变为以时间驱动的（6 个月为周期）的发布模式，并逐步的将 Oracle JDK 原商业特性进行开源
+针对企业客户的需求，Oracle 将以 3 年为周期发布长期支持版本（Long Term Support，LTS）
+Java 9 提供了超过 150 项新功能特性，包括备受期待的模块化系统、可交互的 REPL 工具 Jshell，JDK 编译工具，Java 公共 API 和私有代码，以及安全增强、扩展提升、性能管理改善等。可以说 Java 9 是一个庞大的系统工程，完全做了一个整体改变
+
+模块化系统谈到 Java 9 大家第一个想到的往往就是 Jigsaw 项目。众所周知，Java 已经发展超过二十年，Java 和相关生态在不 ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2023/08/17/Java%208%20%E6%96%B0%E7%89%B9%E6%80%A7/" title="Java 8 新特性">     <img class="post_bg" src="https://simon-bookcase.oss-cn-beijing.aliyuncs.com/JAVA/Java%208%20%E6%96%B0%E7%89%B9%E6%80%A7/preview.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Java 8 新特性"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/08/17/Java%208%20%E6%96%B0%E7%89%B9%E6%80%A7/" title="Java 8 新特性">Java 8 新特性</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-08-17T09:24:25.000Z" title="发表于 2023-08-17 17:24:25">2023-08-17</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/JAVA/">JAVA</a></span></div><div class="content">Java 8 新特性Lambda 表达式简介Lambda 表达式是一个匿名函数，我们可以把 Lambda 表达式理解为是一段可以传递的代码（将代码像数据一样进行传递）。可以写出更简介、更灵活的代码，作为一种更紧凑的代码风格，使 Java 语言的表达能力得到了提升
+比如在之前，如果我们像创建一个 TreeSet，并使用匿名内部类重写它的 compare 方法，代码如下：
+1234567891011@Testpublic void test() &#123;	Comparator&lt;Integer&gt; com = new Comparator&lt;Integer&gt;() &#123;        @Override        public int compare(Integer o1, Integer o2) &#123;            return Integer.compare(o1, o2);        &#125;    &#125;        TreeSet set = new TreeSet&lt;&gt;(com);&#125;
+
+如果使用 ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2023/08/11/%E5%89%8D%E7%AB%AF/CSS%20%E6%95%99%E7%A8%8B/" title="CSS 教程">     <img class="post_bg" src="https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E5%89%8D%E7%AB%AF/CSS%20%E6%95%99%E7%A8%8B/preview.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="CSS 教程"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/08/11/%E5%89%8D%E7%AB%AF/CSS%20%E6%95%99%E7%A8%8B/" title="CSS 教程">CSS 教程</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-08-11T03:44:12.000Z" title="发表于 2023-08-11 11:44:12">2023-08-11</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a></span></div><div class="content">CSS 教程简介简介CSS 的全称为：层叠样式表 ( Cascading Style Sheets ) 
+CSS 也是一种标记语言，用于给 HTML 结构设置样式，例如：文字大小、颜色、元素宽高等等
+简单理解： CSS 可以美化 HTML , 让 HTML 更漂亮
+核心思想： HTML 搭建结构， CSS 添加样式，实现了：结构与样式的分离
+
+编写位置行内样式
+写在标签的 style 属性中，（又称：内联样式），示例：
+1&lt;h1 style=&quot;color:red;font-size:60px;&quot;&gt;Hello World&lt;/h1&gt;
+
+style 属性的值不能随便写，写要符合 CSS 语法规范，是 名:值; 的形式
+行内样式表，只能控制当前标签的样式，对其他标签无效
+行内样式书写繁琐、样式不能复用、并且没有体现出结构与样式分离的思想，不推荐大量使用，只对当前元素添加简单样式时，才偶尔使用
+内部样式
+写在 html 页面内部，将所有的 CSS 代码提取出来，单独放在 style 标签中，示例：
+123456&lt;style&gt;    h1 & ...</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/2/"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-info-avatar is-center"><img class="avatar-img" src="https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E8%83%8C%E6%99%AF%E5%9B%BE/v2-bd12bc8dfb61abe313ad48b907c5da94_720w.webp" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">Simon</div><div class="author-info__description">攀登亦是风景</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">33</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">12</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length-num">10</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/CK-shadow" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:ck1996shadow@163.com" target="_blank" title="Email"><i class="fas fa-envelope-open-text"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2024/01/09/%E5%89%8D%E7%AB%AF/Less%20%E9%A2%84%E5%A4%84%E7%90%86%E8%AF%AD%E8%A8%80/" title="Less 预处理语言"><img src="https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E5%89%8D%E7%AB%AF/Less%20%E6%95%99%E7%A8%8B/preview.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Less 预处理语言"/></a><div class="content"><a class="title" href="/2024/01/09/%E5%89%8D%E7%AB%AF/Less%20%E9%A2%84%E5%A4%84%E7%90%86%E8%AF%AD%E8%A8%80/" title="Less 预处理语言">Less 预处理语言</a><time datetime="2024-01-09T06:37:03.000Z" title="发表于 2024-01-09 14:37:03">2024-01-09</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/12/16/%E4%BA%91%E5%8E%9F%E7%94%9F/Docker%20%E5%AE%9E%E6%88%98/" title="Docker 实战"><img src="https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E4%BA%91%E5%8E%9F%E7%94%9F/Docker%20%E5%AE%9E%E6%88%98/preview.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Docker 实战"/></a><div class="content"><a class="title" href="/2023/12/16/%E4%BA%91%E5%8E%9F%E7%94%9F/Docker%20%E5%AE%9E%E6%88%98/" title="Docker 实战">Docker 实战</a><time datetime="2023-12-16T10:47:40.000Z" title="发表于 2023-12-16 18:47:40">2023-12-16</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/11/26/%E5%A6%82%E4%BD%95%E8%87%AA%E5%AE%9A%E4%B9%89%E4%B8%80%E4%B8%AA%20Spring%20Starter/" title="如何自定义一个 Spring Boot Starter"><img src="https://simon-bookcase.oss-cn-beijing.aliyuncs.com/JAVA/%E5%A6%82%E4%BD%95%E8%87%AA%E5%AE%9A%E4%B9%89%E4%B8%80%E4%B8%AA%20Spring%20Starter/preview.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="如何自定义一个 Spring Boot Starter"/></a><div class="content"><a class="title" href="/2023/11/26/%E5%A6%82%E4%BD%95%E8%87%AA%E5%AE%9A%E4%B9%89%E4%B8%80%E4%B8%AA%20Spring%20Starter/" title="如何自定义一个 Spring Boot Starter">如何自定义一个 Spring Boot Starter</a><time datetime="2023-11-26T09:50:50.000Z" title="发表于 2023-11-26 17:50:50">2023-11-26</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/10/28/ElasticSearch%20%E5%AE%9E%E6%88%98/" title="ElasticSearch 实战"><img src="https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E5%BA%93/ElasticSearch%20%E5%AE%9E%E6%88%98/preview.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="ElasticSearch 实战"/></a><div class="content"><a class="title" href="/2023/10/28/ElasticSearch%20%E5%AE%9E%E6%88%98/" title="ElasticSearch 实战">ElasticSearch 实战</a><time datetime="2023-10-28T03:37:30.000Z" title="发表于 2023-10-28 11:37:30">2023-10-28</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/10/22/SkyWalking%20%E6%95%99%E7%A8%8B/" title="SkyWalking 教程"><img src="https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E4%B8%AD%E9%97%B4%E4%BB%B6/SkyWalking%20%E6%95%99%E7%A8%8B/preview.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="SkyWalking 教程"/></a><div class="content"><a class="title" href="/2023/10/22/SkyWalking%20%E6%95%99%E7%A8%8B/" title="SkyWalking 教程">SkyWalking 教程</a><time datetime="2023-10-22T08:59:53.000Z" title="发表于 2023-10-22 16:59:53">2023-10-22</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>分类</span>
+            <a class="card-more-btn" href="/categories/" title="查看更多">
+    <i class="fas fa-angle-right"></i></a>
+            </div>
+            <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/JAVA/"><span class="card-category-list-name">JAVA</span><span class="card-category-list-count">14</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E4%B8%AD%E9%97%B4%E4%BB%B6/"><span class="card-category-list-name">中间件</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E4%BA%91%E5%8E%9F%E7%94%9F/"><span class="card-category-list-name">云原生</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%89%8D%E7%AB%AF/"><span class="card-category-list-name">前端</span><span class="card-category-list-count">3</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%8D%9A%E5%AE%A2/"><span class="card-category-list-name">博客</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%90%8E%E7%AB%AF%E6%9E%B6%E6%9E%84/"><span class="card-category-list-name">后端架构</span><span class="card-category-list-count">3</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/"><span class="card-category-list-name">大数据</span><span class="card-category-list-count">4</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"><span class="card-category-list-name">数据库</span><span class="card-category-list-count">4</span></a></li>
+            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/Butterfly/" style="font-size: 1.1em; color: #999">Butterfly</a> <a href="/tags/JAVA/" style="font-size: 1.5em; color: #99a9bf">JAVA</a> <a href="/tags/Java/" style="font-size: 1.1em; color: #999">Java</a> <a href="/tags/%E4%B8%AD%E9%97%B4%E4%BB%B6/" style="font-size: 1.1em; color: #999">中间件</a> <a href="/tags/%E4%BA%91%E5%8E%9F%E7%94%9F/" style="font-size: 1.1em; color: #999">云原生</a> <a href="/tags/%E5%89%8D%E7%AB%AF/" style="font-size: 1.3em; color: #99a1ac">前端</a> <a href="/tags/%E5%90%8E%E7%AB%AF%E6%9E%B6%E6%9E%84/" style="font-size: 1.2em; color: #999da3">后端架构</a> <a href="/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/" style="font-size: 1.4em; color: #99a5b6">大数据</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" style="font-size: 1.3em; color: #99a1ac">数据库</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/" style="font-size: 1.1em; color: #999">数据结构与算法</a> <a href="/tags/%E7%94%B5%E5%95%86/" style="font-size: 1.1em; color: #999">电商</a> <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/" style="font-size: 1.1em; color: #999">计算机组成原理</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span><a class="card-more-btn" href="/archives/" title="查看更多">
+    <i class="fas fa-angle-right"></i></a></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/01/"><span class="card-archive-list-date">一月 2024</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/12/"><span class="card-archive-list-date">十二月 2023</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/11/"><span class="card-archive-list-date">十一月 2023</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/10/"><span class="card-archive-list-date">十月 2023</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/09/"><span class="card-archive-list-date">九月 2023</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/08/"><span class="card-archive-list-date">八月 2023</span><span class="card-archive-list-count">4</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/05/"><span class="card-archive-list-date">五月 2023</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/03/"><span class="card-archive-list-date">三月 2023</span><span class="card-archive-list-count">3</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">33</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2024-01-09T07:21:32.665Z"></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By Simon</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"><script>function subtitleType () {
+  if (true) { 
+    var typed = new Typed("#subtitle", {
+      strings: "I may not become a great person,but I can be someone with excellent study habits".split(","),
+      startDelay: 300,
+      typeSpeed: 150,
+      loop: true,
+      backSpeed: 50
+    })
+  } else {
+    document.getElementById("subtitle").innerHTML = 'I may not become a great person'
+  }
+}
+
+if (true) {
+  if (typeof Typed === 'function') {
+    subtitleType()
+  } else {
+    getScript('https://cdn.jsdelivr.net/npm/typed.js/lib/typed.min.js').then(subtitleType)
+  }
 } else {
-  if (t === 'dark') activateDarkMode()
-  else if (t === 'light') activateLightMode()
-}</script><meta name="generator" content="Hexo 5.1.1"></head><body><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" src="/null" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">6</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">标签</div><div class="length_num">5</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">分类</div><div class="length_num">4</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 清单</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div id="body-wrap"><header class="full_page" id="page-header" style="background-image: url(https://simon-bookcase.oss-cn-beijing.aliyuncs.com/Simple_1366x768_wallpaper_by_PendoX.jpg.pagespeed.ce.QMM6r5k-ZV.jpg)"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Simon的书柜</a></span><span id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 清单</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><span class="close" id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="site-info"><h1 id="site_title">Simon的书柜</h1><div id="site_subtitle"><span id="subtitle"></span></div></div><div id="scroll_down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout_page" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2020/09/22/%E3%80%8AJava%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E3%80%8B/" title="《Java数据结构与算法》">     <img class="post_bg" src="https://simon-bookcase.oss-cn-beijing.aliyuncs.com/franki-chamaki-1K6IQsQbizI-unsplash.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="《Java数据结构与算法》"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/09/22/%E3%80%8AJava%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E3%80%8B/" title="《Java数据结构与算法》">《Java数据结构与算法》</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-09-22T15:44:50.000Z" title="发表于 2020-09-22 23:44:50">2020-09-22</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/">数据结构与算法</a></span></div><div class="content">如何区分算法的好坏算法的效率虽然计算机能快速的完成运算处理，但实际上，它也需要根据输入数据的大小和算法效率来消耗一定的处理器资源。要想编写出能高效运行的程序，我们就需要考虑到算法的效率
-算法的效率主要由以下两个复杂度来评估：时间复杂度：评估执行程序所需的时间。可以估算出程序对处理器的使用程度空间复杂度：评估执行程序所需的存储空间。可以估算出程序对计算机内存的使用程度
-设计算法时，一般是要先考虑系统环境，然后权衡时间复杂度和空间复杂度，选取一个平衡点。不过，时间复杂度要比空间复杂度更容易产生问题，因此算法研究的主要也是时间复杂度，不特别说明的情况下，复杂度就是指时间复杂度
-
-时间复杂度大O表示法算法的时间复杂度通常用大O符号表述，定义为T[n] = O(f(n))。称函数T(n)以f(n)为界或者称T(n)受限于f(n)。  如果一个问题的规模是n，解这一问题的某一算法所需要的时间为T(n)。T(n)称为这一算法的“时间复杂度”。当输入量n逐渐加大时，时间复杂度的极限情形称为算法的“渐近时间复杂度”
-推导大O阶
-
-用常数1来取代运行时间中所有加法常数。 
-修改后的运行次数函数中，只保留最 ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2020/09/19/%E3%80%8A%E6%B7%98%E5%AE%9D%E6%8A%80%E6%9C%AF%E8%BF%99%E5%8D%81%E5%B9%B4%E3%80%8B/" title="《淘宝技术这十年》">     <img class="post_bg" src="https://simon-bookcase.oss-cn-beijing.aliyuncs.com/1600538235.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="《淘宝技术这十年》"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/09/19/%E3%80%8A%E6%B7%98%E5%AE%9D%E6%8A%80%E6%9C%AF%E8%BF%99%E5%8D%81%E5%B9%B4%E3%80%8B/" title="《淘宝技术这十年》">《淘宝技术这十年》</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-09-19T00:48:38.000Z" title="发表于 2020-09-19 08:48:38">2020-09-19</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E6%8A%80%E6%9C%AF%E7%9B%B8%E5%85%B3/">技术相关</a></span></div><div class="content">
-推荐指数：★☆☆☆☆书评：《淘宝技术这十年》是阿里巴巴子柳的著作，从书名就可以看出来，主要的核心点有两个，一个是淘宝，另一个就是技术。这本书也是以一个工程师的角度讲述了淘宝的各种变革，全书主要分为了三大部分内容：
-
-第一部分 淘宝的技术变更
-这是全部占比最大的一部分内容，讲述了淘宝从最初的 LAMP，到后来的 Java + Oracle，再到初具现代架构模型的分布式和各种自研组件。其中还包含了淘宝成立及发展过程中的一些小插曲
-
-第二部分 个人发展部分
-子柳最开始是以一个技术开发人员进入的淘宝，但是后来的职位却是千变万化，从开发人员到项目经理，再到培训负责人等等，这一部分也是讲述了他自己在这一系列岗位中的主要工作内容，这一部分，与技术的关系已经不大了
-
-第三部分 大牛访谈
-这一部分是对淘宝里面的一些技术大牛做的一些问答，比如章文嵩博士、吴瀚清等。子柳毕竟不是专业的记者人员，在我看来，这一部分的访谈内容显得有点尴尬。如果你对这些大牛一无所知的话，光看这些访谈的话，可能看完了你都不知道他干了什么；但是如果你对这些大牛有一些了解的话，他们讲的都是各自研究方向的内容，相信我，你很容易就能找到比 ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2020/09/17/%E3%80%8A%E6%B5%AA%E6%BD%AE%E4%B9%8B%E5%B7%85%E3%80%8B/" title="《浪潮之巅》">     <img class="post_bg" src="https://simon-bookcase.oss-cn-beijing.aliyuncs.com/Simple_1366x768_wallpaper_by_PendoX.jpg.pagespeed.ce.QMM6r5k-ZV.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="《浪潮之巅》"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/09/17/%E3%80%8A%E6%B5%AA%E6%BD%AE%E4%B9%8B%E5%B7%85%E3%80%8B/" title="《浪潮之巅》">《浪潮之巅》</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-09-17T14:57:15.000Z" title="发表于 2020-09-17 22:57:15">2020-09-17</time></span></div><div class="content"></div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2020/09/15/%E3%80%8A%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86%E3%80%8B/" title="《计算机组成原理》">     <img class="post_bg" src="https://simon-bookcase.oss-cn-beijing.aliyuncs.com/Simple_1366x768_wallpaper_by_PendoX.jpg.pagespeed.ce.QMM6r5k-ZV.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="《计算机组成原理》"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/09/15/%E3%80%8A%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86%E3%80%8B/" title="《计算机组成原理》">《计算机组成原理》</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-09-15T15:23:13.000Z" title="发表于 2020-09-15 23:23:13">2020-09-15</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90/">计算机组成</a></span></div><div class="content">
-https://www.bilibili.com/video/BV1ix41137Eu?from=search&amp;seid=17192528101127840792
-计算机系统简介计算机软硬件的概念计算机系统graph LR
-计算机系统--> 硬件_计算机的实体
-计算机系统--> 软件_由各类功能特殊的程序组成
-软件_由各类功能特殊的程序组成-->系统软件_用来管理整个计算机系统
-系统软件_用来管理整个计算机系统-->语言处理程序
-系统软件_用来管理整个计算机系统-->操作系统
-系统软件_用来管理整个计算机系统-->服务性程序
-系统软件_用来管理整个计算机系统-->数据库管理系统
-系统软件_用来管理整个计算机系统-->网络软件
-软件_由各类功能特殊的程序组成-->应用软件_按任务需要编制成的各种程序
-
-
-计算机系统的层次结构
-第0级：硬联逻辑级，这是计算机的内核，由门、触发器等逻辑电路组成第1级：微程序级，这级的机器语言是微指令集，程序员用微指令编写的微程序，一般是直接由硬件执行的第2级：传统机器级，这级的机器语言是该级的指令集，程序员用机器指令编写的程序可以由微程序进行解释第 ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2020/09/03/%E3%80%8A%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%B8%93%E4%B8%9A%E5%AF%BC%E8%AE%BA%E3%80%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" title="《计算机专业导论》学习笔记">     <img class="post_bg" src="https://simon-bookcase.oss-cn-beijing.aliyuncs.com/jake-davies-adc2oWaP9R4-unsplash%281%29.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="《计算机专业导论》学习笔记"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/09/03/%E3%80%8A%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%B8%93%E4%B8%9A%E5%AF%BC%E8%AE%BA%E3%80%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" title="《计算机专业导论》学习笔记">《计算机专业导论》学习笔记</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-09-03T15:16:46.000Z" title="发表于 2020-09-03 23:16:46">2020-09-03</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90/">计算机组成</a></span></div><div class="content">
-https://www.bilibili.com/video/BV1Qt411J7mo?p=1
-简介这是B站上哈尔滨工业大学战德臣老师讲的课程，我的目的是想把计算机专业的重要课程系统的学习一遍，而这个也是B站大佬推荐的系列课程的第一课
-仅就课程内容而言，对我而言还是有些尴尬的。前面讲的一些关于计算机组成的东西，讲的内容都很浅显，我基本都知道，而如果只是知道这么一点的话，肯定是不够的，所以不管怎样，还是要系统的、更具针对性的学习一遍。而后面关于代码和算法的内容，在算法建模之后直接来了个遗传算法，我是不知道如果是一个刚进大学，对计算机不甚了解的学生学完这个的帮助究竟有多大。数据结构和算法都很重要，这也是后面我打算逐步深入、认真学习的内容
-这个课程我没有看完，主要是感觉讲的东西很多不重要，重要的部分又讲的太浅，还是要专门去学习那一部分的内容
-如果你是一个刚入学的学生，或者是一个已经工作的程序员，但是对计算机全无了解，那么你可以考虑看一下这个课程。里面的内容也不用了解的太深，知道个大概就行。有了对计算机专业课程的大致了解之后，再选择性的去深入学习自己感兴趣的内容。说到底，这门课程，终究只是个 ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2020/09/01/%E4%BD%BF%E7%94%A8Hexo%E7%9A%84butterfly%E4%B8%BB%E9%A2%98%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2/" title="使用Hexo的butterfly主题搭建一个博客">     <img class="post_bg" src="https://simon-bookcase.oss-cn-beijing.aliyuncs.com/domenico-loia-hGV2TfOh0ns-unsplash.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="使用Hexo的butterfly主题搭建一个博客"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/09/01/%E4%BD%BF%E7%94%A8Hexo%E7%9A%84butterfly%E4%B8%BB%E9%A2%98%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2/" title="使用Hexo的butterfly主题搭建一个博客">使用Hexo的butterfly主题搭建一个博客</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-09-01T05:33:26.000Z" title="发表于 2020-09-01 13:33:26">2020-09-01</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E5%8D%9A%E5%AE%A2/">博客</a></span></div><div class="content">安装Git安装GitHexo 的主题需要通过 Git 来进行下载，同时生成的静态页面也需要部署到 GitHub Page，因此Git是必需的
-网上 Git 的安装和配置教程很多，大家可根据自己的需求选择合适的教程，这是我推荐的一个安装及配置教程
-Git的下载、安装与环境配置
-
-安装npm安装npmHexo 是一个前端框架，因此 npm 就更是必需的了，相比于 Git，npm 的安装就更简单了，这里同样也给出一个安装教程
-npm的安装与配置
-一般情况下，执行到第 5 步，npm 就算安装完成了，如果你的 npm 下载速度太慢或者你有更高的要求的话，可以考虑继续后面的配置
-
-butterfly初体验创建 hexo 博客项目butterfly 是 hexo 博客模板的一个主题，要是用 butterfly 主题，需要先创建一个 hexo 博客项目
-安装 hexo
-1npm i -g hexo
-
-查看 hexo 版本
-1hexo -v
-
-通过 hexo 创建一个博客项目
-1hexo init 项目名
-
-下载项目所需的包
-12cd 项目名npm install
-
-
-
-
-替换博客主题hexo 的默认 ...</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span></div></nav></div><div class="aside_content" id="aside_content"><div class="card-widget card-info"><div class="card-content"><div class="card-info-avatar is-center"><img class="avatar-img" src="/null" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">Simon</div><div class="author-info__description"></div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length_num">6</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length_num">5</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length_num">4</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div></div><div class="sticky_layout"><div class="card-widget card-announcement"><div class="card-content"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div></div><div class="card-widget card-recent-post"><div class="card-content"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2020/09/22/%E3%80%8AJava%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E3%80%8B/" title="《Java数据结构与算法》"><img src="https://simon-bookcase.oss-cn-beijing.aliyuncs.com/franki-chamaki-1K6IQsQbizI-unsplash.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="《Java数据结构与算法》"/></a><div class="content"><a class="title" href="/2020/09/22/%E3%80%8AJava%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E3%80%8B/" title="《Java数据结构与算法》">《Java数据结构与算法》</a><time datetime="2020-09-22T15:44:50.000Z" title="发表于 2020-09-22 23:44:50">2020-09-22</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/09/19/%E3%80%8A%E6%B7%98%E5%AE%9D%E6%8A%80%E6%9C%AF%E8%BF%99%E5%8D%81%E5%B9%B4%E3%80%8B/" title="《淘宝技术这十年》"><img src="https://simon-bookcase.oss-cn-beijing.aliyuncs.com/1600538235.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="《淘宝技术这十年》"/></a><div class="content"><a class="title" href="/2020/09/19/%E3%80%8A%E6%B7%98%E5%AE%9D%E6%8A%80%E6%9C%AF%E8%BF%99%E5%8D%81%E5%B9%B4%E3%80%8B/" title="《淘宝技术这十年》">《淘宝技术这十年》</a><time datetime="2020-09-19T00:48:38.000Z" title="发表于 2020-09-19 08:48:38">2020-09-19</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/09/17/%E3%80%8A%E6%B5%AA%E6%BD%AE%E4%B9%8B%E5%B7%85%E3%80%8B/" title="《浪潮之巅》"><img src="https://simon-bookcase.oss-cn-beijing.aliyuncs.com/Simple_1366x768_wallpaper_by_PendoX.jpg.pagespeed.ce.QMM6r5k-ZV.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="《浪潮之巅》"/></a><div class="content"><a class="title" href="/2020/09/17/%E3%80%8A%E6%B5%AA%E6%BD%AE%E4%B9%8B%E5%B7%85%E3%80%8B/" title="《浪潮之巅》">《浪潮之巅》</a><time datetime="2020-09-17T14:57:15.000Z" title="发表于 2020-09-17 22:57:15">2020-09-17</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/09/15/%E3%80%8A%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86%E3%80%8B/" title="《计算机组成原理》"><img src="https://simon-bookcase.oss-cn-beijing.aliyuncs.com/Simple_1366x768_wallpaper_by_PendoX.jpg.pagespeed.ce.QMM6r5k-ZV.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="《计算机组成原理》"/></a><div class="content"><a class="title" href="/2020/09/15/%E3%80%8A%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86%E3%80%8B/" title="《计算机组成原理》">《计算机组成原理》</a><time datetime="2020-09-15T15:23:13.000Z" title="发表于 2020-09-15 23:23:13">2020-09-15</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/09/03/%E3%80%8A%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%B8%93%E4%B8%9A%E5%AF%BC%E8%AE%BA%E3%80%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" title="《计算机专业导论》学习笔记"><img src="https://simon-bookcase.oss-cn-beijing.aliyuncs.com/jake-davies-adc2oWaP9R4-unsplash%281%29.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="《计算机专业导论》学习笔记"/></a><div class="content"><a class="title" href="/2020/09/03/%E3%80%8A%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%B8%93%E4%B8%9A%E5%AF%BC%E8%AE%BA%E3%80%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" title="《计算机专业导论》学习笔记">《计算机专业导论》学习笔记</a><time datetime="2020-09-03T15:16:46.000Z" title="发表于 2020-09-03 23:16:46">2020-09-03</time></div></div></div></div></div><div class="card-widget card-categories"><div class="card-content"><div class="item-headline"><i class="fas fa-folder-open"></i><span>分类</span></div><ul class="card-category-list" id="aside-cat-list">
-            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%8D%9A%E5%AE%A2/"><span class="card-category-list-name">博客</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%8A%80%E6%9C%AF%E7%9B%B8%E5%85%B3/"><span class="card-category-list-name">技术相关</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/"><span class="card-category-list-name">数据结构与算法</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90/"><span class="card-category-list-name">计算机组成</span><span class="card-category-list-count">2</span></a></li>
-            
-            </ul></div></div><div class="card-widget card-tags"><div class="card-content"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/Butterfly/" style="font-size: 1.1em; color: #999">Butterfly</a> <a href="/tags/%E6%8A%80%E6%9C%AF%E7%9B%B8%E5%85%B3/" style="font-size: 1.1em; color: #999">技术相关</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/" style="font-size: 1.1em; color: #999">数据结构与算法</a> <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/" style="font-size: 1.1em; color: #999">计算机基础</a> <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/" style="font-size: 1.1em; color: #999">计算机组成原理</a></div></div></div><div class="card-widget card-archives"><div class="card-content"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/09/"><span class="card-archive-list-date">九月 2020</span><span class="card-archive-list-count">6</span></a></li></ul></div></div><div class="card-widget card-webinfo"><div class="card-content"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">6</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2021-01-18T14:58:31.462Z"></div></div></div></div></div></div></div></main><footer id="footer" data-type="color"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2021 By Simon</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><section id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></section><div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><div class="js-pjax"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></div></body></html>
+  subtitleType()
+}</script></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

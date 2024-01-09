@@ -1,6 +1,6 @@
-title: Simon的书柜
+title: Simon 的书柜
 subtitle: ''
-description: ''
+description: '攀登亦是风景'
 keywords:
 author: Simon
 language: zh-CN
@@ -88,3 +88,7 @@ menu:
     - 照片 || /Gallery/ || fas fa-images
     - 电影 || /movies/ || fas fa-video
   关于: /about/ || fas fa-heart
+
+card_announcement:
+    enable: true
+    content: 学而不思则罔, 思而不学则殆
