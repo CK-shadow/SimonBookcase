@@ -1,7 +1,9 @@
 ---
 title: CSS 教程
 date: 2023-08-11 11:44:12
-tags: 前端
+tags: 
+  - 前端
+  - CSS
 categories: 
   - 前端
 top_img: https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E5%89%8D%E7%AB%AF/CSS%20%E6%95%99%E7%A8%8B/preview.jpg

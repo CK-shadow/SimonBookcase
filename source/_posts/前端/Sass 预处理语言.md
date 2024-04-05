@@ -1,7 +1,10 @@
 ---
 title: Sass 预处理语言
 date: 2024-03-10 20:36:21
-tags: 前端
+tags: 
+  - 前端
+  - 预处理语言
+  - Sass
 categories: 
   - 前端
 top_img: https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E5%89%8D%E7%AB%AF/Sass%20%E9%A2%84%E5%A4%84%E7%90%86%E8%AF%AD%E8%A8%80/preview.jpg

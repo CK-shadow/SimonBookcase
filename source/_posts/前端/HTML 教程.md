@@ -1,7 +1,9 @@
 ---
 title: HTML 教程
 date: 2023-05-22 09:14:33
-tags: 前端
+tags: 
+  - 前端
+  - HTML
 categories: 
   - 前端
 top_img: https://simon-bookcase.oss-cn-beijing.aliyuncs.com/%E5%89%8D%E7%AB%AF/HTML%20%E6%95%99%E7%A8%8B/preview.jpg
